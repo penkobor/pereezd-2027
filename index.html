@@ -1,0 +1,1668 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Переезд весной 2027</title>
+<meta name="description" content="Совместный переезд в Праге весной 2027: маршруты, сроки, деньги, защита кауце.">
+<style>
+:root{
+  --bg:#f6f5f1; --surface:#ffffff; --surface-2:#faf9f6; --text:#1c1c1a; --muted:#5f5e58; --line:#e2e0d8;
+  --accent:#0f766e; --accent-soft:#e3f1ee; --warn:#a35207; --warn-soft:#fbf1e2; --bad:#b42318; --bad-soft:#fdecea;
+  --good:#16794a; --good-soft:#e5f4ec; --code:#efede6;
+  --t-d:#1d4ed8; --t-d-bg:#e7eefc; --t-z:#15803d; --t-z-bg:#e6f4ea; --t-v:#7e22ce; --t-v-bg:#f3e8fd;
+  --t-p:#a35207; --t-p-bg:#fbf1e2; --t-pr:#57534e; --t-pr-bg:#eeece6;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#131312; --surface:#1c1c1a; --surface-2:#22221f; --text:#ecebe5; --muted:#a6a59d; --line:#34332e;
+    --accent:#5fd4c4; --accent-soft:#16302c; --warn:#f0a33a; --warn-soft:#2f2412; --bad:#f2837a; --bad-soft:#3a1b18;
+    --good:#5ccf8f; --good-soft:#15301f; --code:#2a2925;
+    --t-d:#93b4ff; --t-d-bg:#1b2747; --t-z:#7fd69b; --t-z-bg:#173222; --t-v:#d3a6ff; --t-v-bg:#2d1d42;
+    --t-p:#f0a33a; --t-p-bg:#2f2412; --t-pr:#c9c6bd; --t-pr-bg:#2a2925;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#131312; --surface:#1c1c1a; --surface-2:#22221f; --text:#ecebe5; --muted:#a6a59d; --line:#34332e;
+  --accent:#5fd4c4; --accent-soft:#16302c; --warn:#f0a33a; --warn-soft:#2f2412; --bad:#f2837a; --bad-soft:#3a1b18;
+  --good:#5ccf8f; --good-soft:#15301f; --code:#2a2925;
+  --t-d:#93b4ff; --t-d-bg:#1b2747; --t-z:#7fd69b; --t-z-bg:#173222; --t-v:#d3a6ff; --t-v-bg:#2d1d42;
+  --t-p:#f0a33a; --t-p-bg:#2f2412; --t-pr:#c9c6bd; --t-pr-bg:#2a2925;
+  color-scheme: dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth; scroll-padding-top:64px}
+body{margin:0; background:var(--bg); color:var(--text);
+  font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  -webkit-text-size-adjust:100%; overflow-x:hidden}
+a{color:var(--accent)}
+.wrap{max-width:1080px; margin:0 auto; padding:0 16px}
+header.hero{padding:40px 0 16px}
+.hero h1{font-size:clamp(26px,4.5vw,40px); line-height:1.15; margin:0 0 10px; letter-spacing:-.01em}
+.hero .lead{color:var(--muted); margin:0 0 14px; max-width:760px}
+.hero-grid{display:grid; grid-template-columns:1.3fr 1fr; gap:16px; margin-top:18px}
+@media (max-width:820px){.hero-grid{grid-template-columns:1fr}}
+.panel{background:var(--surface); border:1px solid var(--line); border-radius:14px; padding:16px 18px}
+.panel h3{margin:0 0 8px; font-size:15px; text-transform:uppercase; letter-spacing:.04em; color:var(--muted)}
+.panel ul{margin:0; padding-left:18px}
+.privacy{background:var(--warn-soft); border-color:transparent; color:var(--text); font-size:14px; margin-top:16px}
+.deadlines{list-style:none; padding:0!important; margin:0}
+.deadlines li{display:flex; justify-content:space-between; gap:12px; padding:7px 0; border-bottom:1px dashed var(--line); font-size:15px}
+.deadlines li:last-child{border-bottom:0}
+.deadlines .when{white-space:nowrap; font-variant-numeric:tabular-nums; color:var(--muted)}
+.deadlines .soon .when{color:var(--warn); font-weight:600}
+.deadlines .past{opacity:.5}
+nav.toc{position:sticky; top:0; z-index:10; background:color-mix(in srgb,var(--bg) 88%,transparent);
+  backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px); border-bottom:1px solid var(--line)}
+nav.toc .wrap{display:flex; gap:6px; overflow-x:auto; padding-top:10px; padding-bottom:10px; scrollbar-width:thin}
+nav.toc a{flex:0 0 auto; text-decoration:none; color:var(--text); font-size:14px; padding:5px 11px;
+  border:1px solid var(--line); border-radius:999px; background:var(--surface); white-space:nowrap}
+nav.toc a.active{background:var(--accent); color:var(--surface); border-color:var(--accent)}
+nav.toc .theme{margin-left:auto; cursor:pointer; font:inherit; font-size:14px; padding:5px 11px; border-radius:999px;
+  border:1px solid var(--line); background:var(--surface); color:var(--text); flex:0 0 auto}
+main{padding:20px 0 40px}
+section.sec{background:var(--surface); border:1px solid var(--line); border-radius:16px; padding:22px 24px; margin:0 0 20px}
+@media (max-width:600px){section.sec{padding:18px 14px; border-radius:12px}}
+section.sec h2{margin:0 0 14px; font-size:clamp(21px,3vw,26px); line-height:1.25; letter-spacing:-.005em}
+section.sec h3{margin:22px 0 8px; font-size:18px}
+section.sec p, section.sec li{max-width:860px}
+code{font:13.5px/1.4 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; background:var(--code); padding:1px 5px; border-radius:5px; overflow-wrap:anywhere}
+.tw{overflow-x:auto; margin:12px 0; border:1px solid var(--line); border-radius:10px; -webkit-overflow-scrolling:touch}
+table{border-collapse:collapse; width:100%; font-size:14px; line-height:1.45}
+th,td{padding:9px 11px; text-align:left; vertical-align:top; border-bottom:1px solid var(--line)}
+th{background:var(--surface-2); font-weight:600; white-space:nowrap}
+tr:last-child td{border-bottom:0}
+td{min-width:120px}
+td:first-child{min-width:150px}
+.tw table td code{white-space:nowrap}
+ul.task-list, ul.contains-task-list{list-style:none; padding-left:4px}
+li.task-list-item{position:relative; padding-left:30px; margin:6px 0}
+li.task-list-item input[type=checkbox]{position:absolute; left:2px; top:4px; width:18px; height:18px; accent-color:var(--accent); cursor:pointer}
+li.task-list-item.done{color:var(--muted)}
+li.task-list-item.done > :not(input){text-decoration:line-through; text-decoration-thickness:1px}
+.tag{display:inline-block; font-size:12px; font-weight:600; line-height:1.4; padding:0 6px; border-radius:6px; vertical-align:1px; white-space:normal}
+.t-d{color:var(--t-d); background:var(--t-d-bg)} .t-z{color:var(--t-z); background:var(--t-z-bg)}
+.t-v{color:var(--t-v); background:var(--t-v-bg)} .t-p{color:var(--t-p); background:var(--t-p-bg)}
+.t-pr{color:var(--t-pr); background:var(--t-pr-bg)}
+.pending{color:var(--warn)}
+/* calculator */
+.calc .note{background:var(--warn-soft); padding:10px 14px; border-radius:10px; font-size:15px}
+.calc-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:14px; margin:14px 0}
+.calc fieldset{border:1px solid var(--line); border-radius:12px; padding:10px 14px 14px; margin:0; min-width:0; background:var(--surface-2)}
+.calc legend{font-weight:600; padding:0 6px}
+.calc label{display:block; font-size:14px; margin-top:10px; color:var(--muted)}
+.calc label small{display:block; font-size:12px; opacity:.85}
+.calc input[type=number]{display:block; width:100%; margin-top:4px; font:15px/1.3 inherit; font-variant-numeric:tabular-nums;
+  padding:8px 10px; border:1px solid var(--line); border-radius:8px; background:var(--surface); color:var(--text)}
+.calc input[type=number]:focus{outline:2px solid var(--accent); outline-offset:1px}
+.calc label.chk{display:flex; gap:8px; align-items:center}
+.calc label.chk input{width:18px; height:18px; accent-color:var(--accent)}
+.calc-actions{display:flex; gap:10px; flex-wrap:wrap}
+.btn{font:inherit; font-size:14px; padding:7px 14px; border-radius:8px; border:1px solid var(--line); background:var(--surface); color:var(--text); cursor:pointer}
+.num{text-align:right; font-variant-numeric:tabular-nums; white-space:nowrap}
+.ok{color:var(--good); font-weight:600} .ko{color:var(--bad); font-weight:600}
+.best td{background:var(--good-soft)}
+.kpis{display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:12px; margin:12px 0}
+.kpi{border:1px solid var(--line); border-radius:12px; padding:12px 14px; background:var(--surface-2)}
+.kpi .v{font-size:22px; font-weight:650; font-variant-numeric:tabular-nums}
+.kpi .l{font-size:13px; color:var(--muted)}
+details{margin-top:14px} summary{cursor:pointer; font-weight:600}
+footer{color:var(--muted); font-size:13px; padding:10px 0 40px}
+@media print{nav.toc,.calc-actions{display:none} section.sec{break-inside:avoid-page; border:0; padding:0} body{background:#fff}}
+
+/* viz tokens (validated reference palette: blue, orange, aqua, yellow) */
+:root{ --s1:#2a78d6; --s2:#eb6834; --s3:#1baf7a; --s4:#eda100; --st-good:#0ca30c; --st-bad:#d03b3b; --st-warn:#fab219;
+  --g-line:#e1e0d9; --g-axis:#c3c2b7; --g-muted:#898781; --bar-soft:#9ec5f4; --div-pos:#e34948; --bar-off:#d9d7cf; --hatch:rgba(255,255,255,.55); --hatch2:rgba(11,11,11,.18); }
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){ --s1:#3987e5; --s2:#d95926; --s3:#199e70; --s4:#c98500;
+  --g-line:#2c2c2a; --g-axis:#383835; --bar-soft:#184f95; --div-pos:#e66767; --bar-off:#3a3935; --hatch:rgba(0,0,0,.35); --hatch2:rgba(255,255,255,.18); } }
+:root[data-theme="dark"]{ --s1:#3987e5; --s2:#d95926; --s3:#199e70; --s4:#c98500; --g-line:#2c2c2a; --g-axis:#383835; --bar-soft:#184f95; --div-pos:#e66767; --bar-off:#3a3935; --hatch:rgba(0,0,0,.35); --hatch2:rgba(255,255,255,.18); }
+.tool{border-color:color-mix(in srgb,var(--accent) 35%,var(--line))}
+.intro-line{color:var(--muted); margin-top:-4px}
+.cond{display:grid; gap:8px; margin:14px 0}
+.crow{display:grid; grid-template-columns:1fr auto; gap:10px 16px; align-items:center; padding:10px 12px; border:1px solid var(--line); border-radius:12px; background:var(--surface-2)}
+@media (max-width:600px){ .crow{grid-template-columns:1fr} }
+.clabel b{display:block; font-weight:600; font-size:15px; line-height:1.35}
+.clabel small{display:block; color:var(--muted); font-size:13px}
+.seg{display:inline-flex; border:1px solid var(--line); border-radius:10px; overflow:hidden; background:var(--surface)}
+.seg button{font:inherit; font-size:14px; padding:7px 14px; border:0; background:transparent; color:var(--text); cursor:pointer; min-width:64px}
+.seg button + button{border-left:1px solid var(--line)}
+.seg button[aria-pressed="true"]{background:var(--accent); color:var(--surface); font-weight:600}
+.seg button.sv-yes[aria-pressed="true"]{background:var(--good); color:#fff}
+.seg button.sv-no[aria-pressed="true"]{background:var(--bad); color:#fff}
+.seg button.sv-q[aria-pressed="true"]{background:var(--muted); color:var(--surface)}
+details.inputs{border:1px solid var(--line); border-radius:12px; padding:10px 14px; background:var(--surface-2); margin:10px 0 16px}
+details.inputs > summary{display:flex; flex-wrap:wrap; gap:4px 12px; align-items:baseline}
+.sum-line{font-weight:400; color:var(--muted); font-size:13px; font-variant-numeric:tabular-nums}
+.rec{padding:14px 16px; border-radius:12px; margin:8px 0 14px; font-size:15.5px; border:1px solid transparent}
+.rec.good{background:var(--good-soft); border-color:color-mix(in srgb,var(--good) 30%,transparent)}
+.rec.warn{background:var(--warn-soft); border-color:color-mix(in srgb,var(--warn) 30%,transparent)}
+.rec.bad{background:var(--bad-soft); border-color:color-mix(in srgb,var(--bad) 30%,transparent)}
+button.link{font:inherit; color:var(--accent); background:none; border:0; padding:0; text-decoration:underline; cursor:pointer}
+.cards{display:grid; grid-template-columns:repeat(auto-fill,minmax(230px,1fr)); gap:10px; margin-bottom:18px}
+.card{position:relative; text-align:left; font:inherit; color:var(--text); background:var(--surface); border:1px solid var(--line); border-radius:14px; padding:12px 14px 12px 50px; cursor:pointer; display:flex; flex-direction:column; gap:5px; transition:border-color .15s, box-shadow .15s}
+.card:hover{border-color:var(--accent)}
+.card.sel{border-color:var(--accent); box-shadow:0 0 0 2px var(--accent)}
+.card.s-no{opacity:.55}
+.card.best{background:color-mix(in srgb,var(--good-soft) 70%,var(--surface))}
+.cnum{position:absolute; left:12px; top:12px; width:28px; height:28px; border-radius:8px; display:grid; place-items:center; font-weight:700; background:var(--accent-soft); color:var(--accent)}
+.badge{align-self:flex-start; font-size:11px; font-weight:700; letter-spacing:.04em; text-transform:uppercase; color:var(--good)}
+.cname{font-weight:600; line-height:1.3}
+.chip{display:inline-block; align-self:flex-start; font-size:12.5px; font-weight:600; padding:2px 8px; border-radius:999px}
+.c-ok{background:var(--good-soft); color:var(--good)} .c-q{background:var(--warn-soft); color:var(--warn)} .c-no{background:var(--bad-soft); color:var(--bad)}
+h3 .chip{vertical-align:2px; margin-left:6px}
+.cmoney b{font-size:17px; font-variant-numeric:tabular-nums} .cmoney small{display:block; color:var(--muted); font-size:12.5px}
+.cfund{font-size:13px; font-weight:600}
+.cwhy{font-size:12.5px; color:var(--muted)}
+.detail{border-top:1px solid var(--line); padding-top:6px; margin-bottom:10px}
+.detail h4{margin:18px 0 6px; font-size:15px}
+.risk-toggle{margin:4px 0 8px; font-size:14.5px} .risk-toggle input{accent-color:var(--bad); width:16px; height:16px; vertical-align:-2px}
+.legend{display:flex; flex-wrap:wrap; gap:6px 14px; font-size:13px; color:var(--muted); margin:6px 0}
+.legend i{display:inline-block; width:14px; height:10px; border-radius:3px; margin-right:5px; vertical-align:-1px}
+.sw.s1{background:var(--s1)} .sw.s2{background:var(--s2)} .sw.s3{background:var(--s3)} .sw.s4{background:var(--s4)}
+.sw.good{background:var(--st-good)} .sw.bad{background:var(--st-bad)}
+.sw.hatch{background:repeating-linear-gradient(45deg,var(--g-muted) 0 2px,transparent 2px 5px)}
+.viz{width:100%; overflow:hidden}
+.viz svg{display:block; max-width:100%; height:auto; font-family:inherit}
+.viz .grid{stroke:var(--g-line); stroke-width:1} .viz .base{stroke:var(--g-axis); stroke-width:1}
+.viz .ax{fill:var(--g-muted); font-size:11.5px} .viz .tday{fill:var(--text); font-weight:600}
+.viz .rl{fill:var(--muted); font-size:12.5px} .viz .rl.strong{fill:var(--text); font-weight:700}
+.viz .in{fill:#fff; font-size:12px; font-weight:600; pointer-events:none} .viz .in.dark{fill:#0b0b0b}
+.viz .none{fill:var(--g-muted); font-size:12px; font-style:italic}
+.viz rect.s1{fill:var(--s1)} .viz rect.s2{fill:var(--s2)} .viz rect.s3{fill:var(--s3)} .viz rect.s4{fill:var(--s4)}
+.viz rect.good{fill:var(--st-good)} .viz rect.bad{fill:var(--st-bad)}
+.viz .hl{stroke:var(--hatch); stroke-width:2.5} .viz .hl2{stroke:var(--hatch2); stroke-width:2.5}
+.viz .today{stroke:var(--text); stroke-width:1.5; stroke-dasharray:3 3}
+.viz .msl{stroke:var(--g-muted); stroke-width:1; stroke-dasharray:2 3}
+.viz .msc{fill:var(--surface); stroke:var(--text); stroke-width:1.5} .viz .msn{fill:var(--text); font-size:10.5px; font-weight:700}
+.viz .rline{stroke:var(--st-bad); stroke-width:1.5; stroke-dasharray:5 4}
+.viz .fline{fill:none; stroke:var(--s1); stroke-width:2; stroke-linejoin:round}
+.viz .mk{fill:var(--s1); stroke:var(--surface); stroke-width:2} .viz .mk.bad{fill:var(--st-bad)}
+.viz .xh{stroke:var(--g-axis); stroke-width:1} .viz .xhd{fill:var(--s1); stroke:var(--surface); stroke-width:2}
+.viz .bar.neg{fill:var(--s1)} .viz .bar.pos{fill:var(--div-pos)} .viz .bar.off{fill:var(--bar-off)} .viz .bar.on{stroke:var(--text); stroke-width:2}
+.viz .vl{fill:var(--text); font-size:12.5px; font-variant-numeric:tabular-nums}
+.viz .cbar:hover .bar{opacity:.85}
+.viz-note{font-size:14px; color:var(--muted); margin:6px 0 0}
+.tip{position:absolute; z-index:50; background:var(--surface); color:var(--text); border:1px solid var(--line); border-radius:10px; padding:8px 10px; font-size:13px; line-height:1.45; box-shadow:0 6px 24px rgba(0,0,0,.14); pointer-events:none; max-width:260px}
+.visa{padding:10px 14px; border-radius:10px; font-size:14.5px; margin:8px 0}
+.visa.good{background:var(--good-soft)} .visa.bad{background:var(--bad-soft)}
+ol.ms{list-style:none; padding:0; margin:8px 0; display:grid; gap:4px; font-size:14px}
+.mnum{display:inline-grid; place-items:center; width:20px; height:20px; border-radius:50%; border:1.5px solid var(--text); font-size:11px; font-weight:700; margin-right:8px}
+ul.steps li{margin:3px 0}
+/* collapsible sections */
+section.sec h2 .fold{all:unset; cursor:pointer; display:flex; width:100%; justify-content:space-between; align-items:center; gap:12px}
+section.sec h2 .fold:focus-visible{outline:2px solid var(--accent); outline-offset:4px; border-radius:6px}
+.chev{font-size:22px; color:var(--muted); transition:transform .2s; line-height:1}
+section.sec.closed .chev{transform:rotate(-90deg)}
+section.sec.closed .sec-body{display:none}
+section.sec.closed h2{margin-bottom:0}
+.progress{display:flex; align-items:center; gap:12px; margin:0 0 12px}
+.pbar{flex:1; height:8px; border-radius:99px; background:var(--code); overflow:hidden; max-width:420px}
+.pbar span{display:block; height:100%; background:var(--good); border-radius:99px; transition:width .3s}
+.ptext{font-size:14px; color:var(--muted); white-space:nowrap}
+h3 .cnt{font-size:12.5px; font-weight:600; color:var(--muted); background:var(--code); border-radius:99px; padding:1px 8px; margin-left:8px; vertical-align:2px}
+h3 .cnt.full{background:var(--good-soft); color:var(--good)}
+</style>
+</head>
+<body>
+<header class="hero"><div class="wrap">
+  <h1>Борис и Настя: переезд весной 2027</h1>
+  <p class="lead">Две арендованные квартиры в Праге → одна общая. Маршруты, сроки, деньги и защита кауце. У Насти виза, поэтому договор на жильё нужен ей каждый день. Это анализ, а не юридическая консультация.</p>
+  <div class="hero-grid">
+    <div class="panel"><p>Подготовлено 08.11.2026 (Europe/Prague). Ничего не отправлялось и не согласовывалось ни с кем. Это анализ и план, не юридическая консультация.</p>
+<p><strong>Метки в тексте</strong></p>
+<ul>
+<li><strong><span class="tag t-d">Д</span></strong> — текст договора (как вы его передали).</li>
+<li><strong><span class="tag t-z">З</span></strong> — закон или официальное разъяснение; источник и дата проверки в разделе 10.</li>
+<li><strong><span class="tag t-v">В</span></strong> — ваши слова, документом не подтверждены.</li>
+<li><strong><span class="tag t-p">П</span></strong> — моё предположение или обычная практика; проверить.</li>
+<li><strong><span class="tag t-pr">Пр</span></strong> — пример для расчёта. Это <strong>не</strong> ваши данные и <strong>не</strong> цены рынка.</li>
+</ul></div>
+    <div class="panel"><h3>Ближайшие сроки</h3><ul class="deadlines" id="deadlines"></ul></div>
+  </div>
+  <div class="panel privacy">Эта страница на GitHub Pages открыта всем, у кого есть ссылка. Поиск её не индексирует (тег noindex). Не добавляйте сюда номера счетов, адреса, паспортные и визовые данные, имена собственников. Ваши числа в калькуляторе и отметки в календаре хранятся только в вашем браузере.</div>
+</div></header>
+<nav class="toc" aria-label="Разделы"><div class="wrap" id="toc"><button class="theme" id="theme" type="button">Тема: авто</button></div></nav>
+<main><div class="wrap">
+<section class="sec" id="1-короткий-вывод">
+<h2>1. Короткий вывод</h2>
+<p><strong>Главное ограничение: Настя живёт по визе.</strong> У неё в <strong>каждый день</strong> должен быть действующий договор на жильё <span class="tag t-v">В</span>. Маршруты с промежутком без договора не рассматриваются. Это касается и месяца у Бориса: на него тоже нужен письменный договор. Важны <strong>даты договоров</strong>, а не дни выдачи ключей. По закону документ о жилье проверяют при заявлении на визу или её продлении, при смене адреса и по запросу полиции (§ 31, § 98, § 103 zákona 326/1999) <span class="tag t-z">З</span>. Ваше правило «договор каждый день» строже закона и надёжнее.</p>
+<p><strong>Предварительно лучший маршрут — 2.</strong> Настя сдаёт квартиру в конце февраля, март живёт у Бориса по договору, новая квартира с 1 апреля. Он дешевле маршрута 3 на <code>G − (ΔU + St + Mx)</code>, то есть на месячный платёж Насти минус затраты на временный переезд. Он дешевле маршрута 1 примерно на месяц новой аренды. Это верно при пяти условиях:</p>
+<ol type="1">
+<li><p>Настя с нужными вещами физически помещается у Бориса, либо склад дешёвый.</p></li>
+<li><p><strong>На март у Насти есть документ о жилье у Бориса, который примет OAMP.</strong> Проще всего форма «Potvrzení o zajištění ubytování» <span class="tag t-z">З</span>:</p>
+<ul>
+<li>Борис подписывает её как арендатор. Подпись заверяется (50 Kč в Czech POINT, на почте или на úřad) или ставится прямо в OAMP. Можно и отправить из его datová schránka.</li>
+<li>К форме прикладывается договор аренды Бориса.</li>
+<li>Согласие собственников Бориса OAMP для этого не требует <span class="tag t-z">З</span>.</li>
+</ul>
+<p>Платный поднаём тоже возможен. Но тогда Борис становится «ubytovatel» и должен сообщить о Насте в полицию за 3 рабочих дня (§ 99–102 zákona 326/1999) <span class="tag t-z">З</span>. Если нет особой причины, проще бесплатное проживание по форме Potvrzení.</p></li>
+<li><p>Собственники Бориса письменно уведомлены о втором жильце (II.2, § 2272) <span class="tag t-d">Д</span>, <span class="tag t-z">З</span>.</p></li>
+<li><p><strong>На апрель для Насти заранее есть страховка.</strong> Если новая квартира не подписана к ~25.02, нужна договорённость о продлении у собственников Бориса и новое Potvrzení для Насти. Иначе 01.04 у Насти не будет документа — такой вариант исключён.</p></li>
+<li><p>Ключи от новой квартиры будут на 3–7 дней раньше 1 апреля (платно), <strong>либо</strong> собственники Бориса письменно согласны на передачу 1–2 апреля. 31.03 — среда сразу после Пасхи (26 и 29 марта — праздники).</p></li>
+</ol>
+<p><strong>Если пункты 2 или 4 не решаются — выбирать маршрут 3.</strong> Договор Насти продлевается до 31.03, без документа у Бориса и лишней смены адреса. По визе это самый простой маршрут. Он дороже маршрута 2 примерно на один месячный платёж Насти минус расходы на временный переезд.</p>
+<p><strong>Когда выигрывает другой маршрут:</strong></p>
+<ul>
+<li><strong>Маршрут 4</strong> (договор Бориса до 30.04, новая с 1.05). Выгоднее маршрута 2, только если собственники Бориса подпишут короткое продление без годового автопродления, и при этом <code>N &gt; B + ΔU + St + плата за продление</code>. Даёт лишний месяц накоплений. Требует, чтобы Настя два месяца жила у Бориса или продлевала свой договор.</li>
+<li><strong>Маршрут 3</strong> (договор Насти до 31.03). Спокойный вариант с одним переездом и одной сменой адреса для визы. Дороже маршрута 2 на <code>G − (ΔU + St + Mx)</code>. Имеет смысл, если у Бориса жить вдвоём, хранить вещи или оформить договор нельзя. Страховка на апрель: если к ~25.02 новой квартиры нет, нужно ещё одно продление. Договор требует согласовать его за месяц до окончания.</li>
+<li><strong>Маршрут 1</strong> (новая к 1.03). Самый дорогой: Борис платит март в старой квартире. Исключение — если собственники согласятся на досрочное окончание почти бесплатно. Деньги на старт нужны уже к середине февраля, а до этого у вас будет примерно 3 зарплаты. Договор новой квартиры должен начинаться не позже дня после окончания договора Насти. Если к ~25.01 новой квартиры нет, страховка Насти на март — продление её договора (маршрут 3) или проживание у Бориса по форме Potvrzení (маршрут 2).</li>
+<li><strong>Маршрут 5</strong> (новая с 1.06). Запасной вариант, если денег не хватает. Требует согласия собственников Бориса на продление до 31.05 и договора для Насти на 3 месяца у Бориса.</li>
+</ul>
+<p><strong>Что нужно сделать в любом маршруте:</strong></p>
+<ul>
+<li><strong>Уведомление Бориса о непродлении</strong> должно быть <em>доставлено обоим собственникам</em> примерно к 20.01.2027. Отправить его нужно не позже 15.01. Без него договор продлится до 31.03.2028 <span class="tag t-d">Д</span>. Это нужно, даже пока идут переговоры. Подписанное позже допсоглашение о коротком продлении его заменит.</li>
+<li><strong>Точная дата окончания договора Насти.</strong> 28.02.2027 — воскресенье. Сдать квартиру нужно до 15:00 в день окончания <span class="tag t-d">Д</span>. Нужно знать: 28.02 или 01.03 (понедельник), и в какой день компания реально принимает квартиру. От этой даты считается непрерывность договоров для визы.</li>
+<li><strong>Виза Насти.</strong> Каждый следующий договор начинается не позже дня после окончания предыдущего. О смене адреса нужно сообщить в OAMP в течение 30 дней, если на новом месте она живёт дольше 30 дней (§ 98 odst. 3 zákona 326/1999) <span class="tag t-z">З</span>. Если в эти месяцы Настя подаёт на продление визы или ВНЖ, договор на жильё будет нужен и для заявления.</li>
+<li><strong>Деньги.</strong> Стартовый платёж за новую квартиру нужен за 1–4 недели до ключей <span class="tag t-p">П</span>. Возвраты старых кауце приходят позже, и в стартовый фонд они не входят.</li>
+</ul>
+</section>
+<section class="sec tool" id="tool">
+<h2>Подбор маршрута</h2>
+<p class="intro-line">Отметьте, что уже известно. Маршруты, которые невозможны, отключатся, а рекомендация пересчитается. Нажмите на карточку маршрута, чтобы увидеть его шкалу договоров и деньги по датам.</p>
+
+<div class="cond" id="cond"></div>
+
+<details class="inputs" id="inputs">
+  <summary><span>Ваши числа</span> <span class="sum-line" id="sum-line"></span></summary>
+  <p class="note"><b>Начальные значения — примеры</b>, а не ваши данные и не рыночные цены. Подставьте свои числа. Они сохраняются только в этом браузере.</p>
+  <div class="calc-grid" id="calc-form"></div>
+  <div class="calc-actions"><button class="btn" id="calc-reset" type="button">Вернуть примеры</button></div>
+</details>
+
+<div class="rec" id="rec" aria-live="polite"></div>
+<div class="cards" id="cards" role="list"></div>
+
+<div class="detail" id="detail">
+  <h3 id="sel-title"></h3>
+  <div class="risk-toggle"><label><input type="checkbox" id="risk"> Что если новая квартира найдётся на месяц позже?</label></div>
+  <div class="legend" id="tl-legend"></div>
+  <div class="viz" id="timeline"></div>
+  <div class="visa" id="visa-check"></div>
+  <ol class="ms" id="milestones"></ol>
+  <h4>Деньги на счету по датам</h4>
+  <div class="viz" id="fundchart"></div>
+  <p class="viz-note" id="fund-note"></p>
+  <h4>Что сделать в этом маршруте</h4>
+  <ul class="steps" id="sel-steps"></ul>
+</div>
+
+<h3>Расходы маршрутов за март–июнь 2027</h3>
+<div class="kpis" id="calc-kpis"></div>
+<div class="viz" id="costchart"></div>
+<p class="viz-note">Учитывается только то, что зависит от маршрута: аренда за март–июнь, доплата за услуги, склад, переезды, ранние ключи, платы собственникам. Уборка, покраска, кауце и комиссия одинаковы во всех маршрутах и сюда не входят. В графике фонда они учтены.</p>
+<details><summary>Таблица маршрутов</summary><div class="tw"><table id="calc-table"></table></div></details>
+
+<h3>Когда экономия исчезает</h3>
+<ul id="calc-be"></ul>
+
+<details>
+<summary>Как это считается</summary>
+<ul>
+<li><code>Z</code> — сколько вы откладываете в месяц сейчас, после всех расходов, включая <b>обе нынешние аренды</b>. Дальше учитываются только изменения. Поэтому старая аренда не считается дважды.</li>
+<li>Изменение остатка в месяц:
+  <ul>
+    <li>Настя живёт у Бориса: <code>+G − ΔU − St</code>;</li>
+    <li>первый месяц в новой: <code>+B + G</code> (сама новая аренда уже вошла в старт);</li>
+    <li>дальше в новой: <code>+B + G − N</code>.</li>
+  </ul></li>
+<li>Старт = кауце + комиссия (с НДС, если отмечено) + первый месяц + бронь, которая не зачитывается. Ранние ключи <code>X = N × дни / 30</code>.</li>
+<li>Зарплаты приходят в указанный день месяца. Платежи привязаны к датам маршрута. Если зарплата и платёж в один день, сначала учитывается платёж.</li>
+<li>«Нужно откладывать» — наименьший <code>Z</code>, при котором фонд ни разу не опускается ниже запаса <code>R</code>. Возвраты старых кауце не учитываются. Прошедшие даты не учитываются: <code>F0</code> — накопления на сегодня.</li>
+<li>Шкала договоров проверяет правило визы: у Насти каждый день должен быть действующий договор. Ранние ключи считаются договором с более ранней даты.</li>
+</ul>
+</details>
+</section>
+
+<section class="sec" id="2-сравнение-маршрутов">
+<h2>2. Сравнение маршрутов</h2>
+<p>Сравниваю <strong>одинаковый период: 1 марта – 30 июня 2027</strong>. Считаю только то, что меняется между маршрутами: жильё, переезды, перекрытие дат. Всё остальное одинаково и сокращается. За точку отсчёта (0) взят маршрут 2.</p>
+<p>Обозначения: <code>B</code> — месячный платёж Бориса (аренда + услуги), <code>G</code> — Насти, <code>N</code> — новой квартиры, <code>ΔU</code> — доплата за услуги у Бориса за второго жильца в месяц, <code>St</code> — склад в месяц, <code>M</code> — один переезд, <code>Mx</code> — лишний (второй) переезд вещей Насти, <code>X</code> — платный ранний доступ к новой квартире или временное жильё, <code>E</code> — плата собственнику за досрочное окончание или продление.</p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Маршрут</th>
+<th>Ключи от новой</th>
+<th>Где Настя живёт до переезда</th>
+<th>Чьи согласия нужны</th>
+<th>Расход за мар–июн относительно маршрута 2</th>
+<th><span class="tag t-pr">Пр</span> пример</th>
+<th>Главный риск</th>
+<th>Запасной путь</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1.</strong> Новая к 1.03, Борис платит март</td>
+<td>1.03 (пн)</td>
+<td>Сразу в новой; квартира Бориса в марте — буфер</td>
+<td>Новый собственник. Собственники Бориса — только если просим досрочно. Договор новой квартиры начинается не позже дня после окончания договора Насти</td>
+<td><code>N − ΔU − St − Mx − X</code></td>
+<td>+11 967</td>
+<td>Мало времени и денег: старт к ~15.02</td>
+<td>Маршрут 3 или 2 — страховку на март готовить к ~25.01</td>
+</tr>
+<tr>
+<td><strong>1а.</strong> То же, но Борис выходит 28.02 по соглашению</td>
+<td>~22.02 (ранний доступ)</td>
+<td>Сразу в новой</td>
+<td>Оба собственника Бориса письменно (VII.2)</td>
+<td><code>N + E − B − ΔU − St − Mx</code></td>
+<td>−1 500 + E</td>
+<td>Отказ, плата <code>E</code>, две сдачи в выходные</td>
+<td>Маршрут 1</td>
+</tr>
+<tr>
+<td><strong>2.</strong> Настя у Бориса в марте, новая к 1.04</td>
+<td>1.04 (чт); нужен ранний доступ</td>
+<td>У Бориса; часть вещей у Бориса или на складе</td>
+<td><strong>Документ о жилье для Насти у Бориса</strong> (форма Potvrzení от Бориса + его договор). Уведомить собственников Бориса. Ранний доступ или передача 1.04</td>
+<td>0</td>
+<td>0</td>
+<td>31.03 кончается договор Бориса, а значит, и основание для жилья Насти: без новой квартиры у неё нет документа</td>
+<td>Маршрут 4: продление у Бориса и новое Potvrzení для Насти, договориться к ~25.02</td>
+</tr>
+<tr>
+<td><strong>3.</strong> Договор Насти до 31.03, оба к 1.04</td>
+<td>1.04; нужен ранний доступ</td>
+<td>В своей до 31.03</td>
+<td>Компания Насти письменно, за месяц до окончания</td>
+<td><code>G − ΔU − St − Mx</code></td>
+<td>+6 000</td>
+<td>Две сдачи и переезд в одну неделю после Пасхи. Если новой нет к ~25.02, нужно ещё одно продление</td>
+<td>Продление договора Насти на апрель (просить до ~25.02)</td>
+</tr>
+<tr>
+<td><strong>4.</strong> Договор Бориса до 30.04, новая к 1.05</td>
+<td>30.04 (1.05 — сб, праздник)</td>
+<td>У Бориса 2 месяца (или продление договора Насти на 2 месяца)</td>
+<td>Оба собственника Бориса письменно, без автопродления. Potvrzení для Насти у Бориса на 2 месяца (или продление её договора)</td>
+<td><code>B − N + ΔU + St + E</code> (на месяц)</td>
+<td>−4 500 (если Настя у Бориса)</td>
+<td>Отказ собственников; 2 месяца вдвоём в квартире Бориса</td>
+<td>Маршрут 2</td>
+</tr>
+<tr>
+<td><strong>5.</strong> Договор Бориса до 31.05, новая к 1.06</td>
+<td>1.06 (вт)</td>
+<td>У Бориса 3 месяца</td>
+<td>Оба собственника Бориса письменно. Potvrzení для Насти у Бориса на 3 месяца</td>
+<td><code>2 × (B − N + ΔU + St) + E</code></td>
+<td>−9 000</td>
+<td>То же, что в маршруте 4, на месяц дольше</td>
+<td>Маршрут 4</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong><span class="tag t-pr">Пр</span> Пример</strong>, только чтобы показать логику. B = 20 000, G = 15 500 (по договору; актуальность проверить), N = 28 000, ΔU = 1 000, St = 2 500, M = Mx = 6 000, X = 7 дней × N/30 ≈ 6 533, E = 0. Если в вашем случае <code>N ≤ B</code>, маршруты 4 и 5 ничего не экономят. Остаётся только выигрыш в накоплениях: старт можно оплатить на месяц позже.</p>
+<p><strong>Когда экономия маршрута 2 исчезает</strong> (это и есть точки безубыточности):</p>
+<ul>
+<li>Против маршрута 3: когда <code>ΔU + St + Mx ≥ G</code>. Пример: G = 15 500. Если склад на месяц, доплата за услуги и второй переезд вещей Насти в сумме дороже ~15 500, проще продлить договор Насти на март.</li>
+<li>Против маршрута 1: когда <code>ΔU + St + Mx + X ≥ N</code>. Почти никогда, если новая аренда больше ~20 000.</li>
+<li>Маршрут 1а против маршрута 1: досрочное соглашение выгодно, если <code>E &lt; B</code>. То есть если плата собственнику меньше мартовского платежа Бориса.</li>
+<li>Маршрут 1а против маршрута 2: выгоден, если <code>E + N &lt; B + ΔU + St + Mx</code>. В примере это <code>E &lt; 1 500</code>. Смысл: досрочный выход Бориса нужен, только если он почти бесплатный.</li>
+<li>Маршрут 4 против маршрута 2: каждый месяц отсрочки экономит <code>N − B − ΔU − St</code>. Плата за продление съедает экономию, если <code>E ≥ N − B − ΔU − St</code>. В примере это 4 500 за месяц.</li>
+</ul>
+<p>Подробности каждого маршрута — в разделе 9.</p>
+</section>
+<section class="sec" id="3-календарь">
+<h2>3. Календарь</h2>
+<p>Время пражское. Выходные и праздники учтены: 28.02.2027 — <strong>воскресенье</strong>; <strong>26.03 (Velký pátek) и 29.03 (Velikonoční pondělí)</strong> — праздники; 31.03 — среда; 01.05 — <strong>суббота и праздник</strong>; 31.05 — понедельник.</p>
+<h3 id="ноябрь-2026--собрать-данные">Ноябрь 2026 — собрать данные</h3>
+<ul class="task-list">
+<li class="task-list-item"><label><input type="checkbox" />Борис: найти раздел IV договора (аренда, услуги, кауце, штрафы), все допсоглашения, входной протокол и фото. Записать адреса обоих собственников. Важно: если кто-то из них живёт за границей, письмо по закону считается доставленным не через 3, а через 15 рабочих дней <span class="tag t-z">З</span>.</label></li>
+<li class="task-list-item"><label><input type="checkbox" />Настя: найти <strong>подписанный</strong> договор или допсоглашение с датами до 2027 года, входной протокол, подтверждения оплаты кауце (5 000 + 10 500) и последние платежи. Проверить сумму аренды: 12 000 или 11 500.</label></li>
+<li class="task-list-item"><label><input type="checkbox" />Посчитать <code>F0</code> (свободные накопления), <code>Z</code> (ежемесячный остаток), неприкосновенный запас <code>R</code>, целевой <code>N</code>. Разложить 70 000 и 110 000 на части (раздел 4.3).</label></li>
+<li class="task-list-item"><label><input type="checkbox" /><strong>До 30.11.2026 (пн)</strong> — единственный срок, чтобы Борис закончил аренду 28.02 <em>в одностороннем порядке</em>. Для этого výpověď по VI.2 / § 2287 должна быть <em>доставлена</em> в ноябре и основана на реальном существенном изменении обстоятельств. Переезд к партнёру — слабое основание: MMR приводит в пример смену работы с переездом, рождение ребёнка, уход за родственником, покупку жилья <span class="tag t-z">З</span>. <strong>Рекомендация: этим путём не идти.</strong> Если нужен выход 28.02 — договариваться (письменное соглашение не привязано к ноябрю).</label></li>
+</ul>
+<h3 id="декабрь-2026--разведка-без-обязательств">Декабрь 2026 — разведка без обязательств</h3>
+<ul class="task-list">
+<li><p><label><input type="checkbox" />Борис устно или по e-mail спрашивает обоих собственников, <em>без обещаний</em>:</label></p>
+<ul>
+<li>(а) возможно ли окончание 28.02 по соглашению и за какую плату;</li>
+<li>(б) возможно ли короткое продление до 30.04 или 31.05 без годового автопродления;</li>
+<li>(в) можно ли сдать квартиру 1–2.04 вместо 31.03;</li>
+<li>(г) возможна ли «гибкая дата»: договор до 30.04, но можно сдать 31.03, если предупредить до 01.03.</li>
+</ul></li>
+<li><p><label><input type="checkbox" />Настя спрашивает компанию:</label></p>
+<ul>
+<li>точную дату окончания (28.02 или 01.03);</li>
+<li>в какой день и час примут квартиру, если 28.02 — воскресенье;</li>
+<li>возможно ли продление до 31.03 и на каких условиях;</li>
+<li>когда будет предварительный осмотр.</li>
+</ul></li>
+<li><p><label><input type="checkbox" />Проверить, помещаетесь ли вы вдвоём у Бориса. Узнать цены склада (<code>St</code>) и перевозки (<code>M</code>, <code>Mx</code>).</label></p></li>
+<li><p><label><input type="checkbox" />Проверить свои договоры на интернет и энергию: сроки расторжения, перенос на новый адрес.</label></p></li>
+<li><p><label><input type="checkbox" /><strong>Виза Насти.</strong> Записать:</label></p>
+<ul>
+<li>тип визы или ВНЖ и срок действия;</li>
+<li>не выпадает ли продление на февраль–май 2027 (тогда договор на жильё нужен и для заявления);</li>
+<li>есть ли у Бориса datová schránka или электронная подпись: тогда форму Potvrzení можно отправить без заверения подписи.</li>
+</ul>
+<p>О каждой смене адреса дольше 30 дней Настя сообщает в OAMP в течение 30 дней (§ 98 odst. 3 zákona 326/1999) <span class="tag t-z">З</span>. В маршруте 2 это два сообщения: о переезде к Борису и о переезде в новую квартиру. В маршрутах 1 и 3 — одно.</p></li>
+<li><p><label><input type="checkbox" />Если Борис тоже не гражданин ЕС — то же правило для него. Гражданам ЕС сообщать нужно, только если смена дольше 180 дней, срок 30 рабочих дней <span class="tag t-z">З</span>.</label></p></li>
+</ul>
+<h3 id="январь-2027--точка-решения">Январь 2027 — точка решения</h3>
+<ul class="task-list">
+<li><p><label><input type="checkbox" /><strong>4–8.01.</strong> Если рассматриваете маршрут 3 (или продление договора Насти в маршруте 4б), она <em>письменно</em> просит компанию о продлении. Договор требует согласовать продление не позднее чем за месяц до окончания <span class="tag t-d">Д</span>. Цель — подписанное допсоглашение до ~25.01.</label></p></li>
+<li><p><label><input type="checkbox" /><strong>11–15.01 — ТОЧКА РЕШЕНИЯ.</strong> Выбрать маршрут по фактам: ответы собственников, сумма накоплений, готовность жить вместе в марте, документ для визы Насти.</label></p></li>
+<li><p><label><input type="checkbox" /><strong>До ~22.01 — у Насти должен быть решён договор на март.</strong> Это либо продление её договора (просить сейчас: компания требует согласовать продление за месяц до окончания), либо проживание у Бориса по форме Potvrzení (подпись Бориса заверить, приложить его договор). Даже в маршруте 1 одно из двух нужно подготовить как страховку — на случай, если новая квартира не найдётся к ~15.02.</label></p></li>
+<li><p><label><input type="checkbox" /><strong>Не позже 15.01 (пт)</strong> — Борис отправляет <strong>уведомление о непродлении</strong> (что настаивает на окончании аренды 31.03.2027) <strong>каждому из двух собственников</strong>:</label></p>
+<ul>
+<li>заказным письмом с уведомлением о вручении (doporučeně s dodejkou);</li>
+<li>плюс копия по e-mail;</li>
+<li>лучше ещё и лично, с подписью о получении на копии.</li>
+</ul>
+<p>По § 573 письмо считается доставленным на 3-й рабочий день после отправки <span class="tag t-z">З</span>: отправка 15.01 → 20.01. Последний безопасный день <em>доставки</em> — 29.01 (пт); 30.01 — суббота. На перенос срока из-за выходного не рассчитывать. § 607 для такого обратного срока, по академическому мнению, не применяется (раздел 8.1). <strong>Уведомление отправляется в любом маршруте</strong>, даже если идут переговоры о продлении. Продление потом оформляется отдельным допсоглашением, подписанным обоими собственниками.</p></li>
+<li><p><label><input type="checkbox" /><strong>25.01.</strong> Платёж Насти за февраль (оплата до 25-го числа предыдущего месяца <span class="tag t-d">Д</span>). В маршрутах 1 и 2 это её последний платёж аренды.</label></p></li>
+<li><p><label><input type="checkbox" />Маршрут 1: начать активный поиск. Бронь — ~1–10.02.</label></p></li>
+</ul>
+<h3 id="февраль-2027">Февраль 2027</h3>
+<ul class="task-list">
+<li class="task-list-item"><label><input type="checkbox" />Маршрут 1: подписание новой аренды и <strong>стартовый платёж</strong> до ~15.02.</label></li>
+<li class="task-list-item"><label><input type="checkbox" />Настя: в течение последнего месяца даёт показы будущим жильцам (по договору) <span class="tag t-d">Д</span>. Предварительный осмотр с компанией ~10–15.02. Мелкий ремонт до 1 000 Kč, генеральная уборка, фото.</label></li>
+<li class="task-list-item"><label><input type="checkbox" />Маршруты 2 и 3: активный поиск квартиры к 1.04 с середины февраля.</label></li>
+<li class="task-list-item"><label><input type="checkbox" /><strong>25.02.</strong> Платёж Насти за март — только в маршруте 3 (если продлено).</label></li>
+<li class="task-list-item"><label><input type="checkbox" /><strong>26.02 (пт)</strong> — передача квартиры Насти, если договор кончается 28.02 и компания не принимает в воскресенье. Иначе <strong>01.03 (пн) до 15:00</strong>. Дату и час подтвердить письменно.</label></li>
+<li class="task-list-item"><label><input type="checkbox" />Маршрут 2: <strong>форма Potvrzení для Насти подписана Борисом и заверена до её переезда.</strong> В ней указан срок: с дня после окончания договора Насти до дня перед началом новой аренды, но не дольше договора Бориса. К форме приложить копию договора Бориса. Переезд Насти к Борису и на склад 26–28.02. <strong>Борис в течение недели письменно сообщает обоим собственникам</strong> о втором жильце (II.2) <span class="tag t-d">Д</span>, <span class="tag t-z">З</span>.</label></li>
+<li class="task-list-item"><label><input type="checkbox" /><strong>~25.02 — страховка на апрель для Насти</strong> (маршруты 2 и 3). Если новая квартира к 1.04 не подписана, нужно одно из двух. В маршруте 2 — продление у Бориса и новое Potvrzení для Насти (по сути маршрут 4). В маршруте 3 — ещё одно продление её договора, согласовать за месяц до 31.03. Промежуток без договора не допускается.</label></li>
+</ul>
+<h3 id="март-2027">Март 2027</h3>
+<ul class="task-list">
+<li class="task-list-item"><label><input type="checkbox" /><strong>До ~12.03.</strong> Маршруты 2 и 3: бронь и подписание, стартовый платёж. Договориться о ключах на ~25–27.03 (платно, пропорционально дням).</label></li>
+<li class="task-list-item"><label><input type="checkbox" /><strong>~10–15.03.</strong> Предварительный осмотр квартиры Бориса с собственниками. Письменно согласовать покраску (раздел 5).</label></li>
+<li class="task-list-item"><label><input type="checkbox" /><strong>До 25.03 (чт).</strong> Покраска и ремонт закончены и высохли: впереди 26–29.03, праздники.</label></li>
+<li class="task-list-item"><label><input type="checkbox" /><strong>30.03 (вт).</strong> Передача квартиры Насти в маршруте 3 — не в один день с Борисом.</label></li>
+<li class="task-list-item"><label><input type="checkbox" /><strong>31.03 (ср).</strong> Передача квартиры Бориса (маршруты 1, 1а — раньше, 2, 3).</label></li>
+<li class="task-list-item"><label><input type="checkbox" /><strong>01.04 (чт).</strong> Начало новой аренды (маршруты 2, 3).</label></li>
+<li class="task-list-item"><label><input type="checkbox" /><strong>OAMP.</strong> Настя сообщает о смене адреса в течение 30 дней после каждого переезда, если живёт на новом месте дольше 30 дней. Маршрут 2: о переезде к Борису — до ~30.03, о новой квартире — до ~30.04. Маршруты 1 и 3 — одно сообщение после переезда в новую квартиру <span class="tag t-z">З</span>.</label></li>
+</ul>
+<h3 id="апрель--июнь-2027">Апрель – июнь 2027</h3>
+<ul class="task-list">
+<li class="task-list-item"><label><input type="checkbox" />Маршрут 4: передача 30.04 (пт), ключи от новой — 30.04 или раньше. 01.05 — суббота и праздник.</label></li>
+<li class="task-list-item"><label><input type="checkbox" />Маршрут 5: передача 31.05 (пн), новая с 01.06 (вт).</label></li>
+<li class="task-list-item"><label><input type="checkbox" />После каждой передачи — письменно новый адрес и номер счёта для кауце. Борису — заказным письмом (VII.5) <span class="tag t-d">Д</span>. Запрос возврата кауце с процентами (раздел 5).</label></li>
+<li class="task-list-item"><label><input type="checkbox" /><strong>До 30.04.2027.</strong> Годовой расчёт услуг за 2026 год (если расчётный период — календарный год) <span class="tag t-z">З</span>. Скорее всего, придёт уже после выезда.</label></li>
+</ul>
+<h3 id="2028">2028</h3>
+<ul class="task-list">
+<li class="task-list-item"><label><input type="checkbox" /><strong>До 30.04.2028.</strong> Расчёт услуг за 2027 год (январь–февраль или март). Доплата или переплата — в течение 4 месяцев по закону или в срок по договору <span class="tag t-z">З</span>. Возражения — в течение 30 дней <span class="tag t-z">З</span>.</label></li>
+</ul>
+</section>
+<section class="sec" id="4-деньги">
+<h2>4. Деньги</h2>
+<h3 id="41-модель-расчёта">4.1 Модель расчёта</h3>
+<p>Беру <strong>ежемесячный остаток</strong> <code>Z</code>: доходы обоих минус <em>все</em> текущие расходы, <strong>включая обе нынешние аренды</strong>. Это то, что вы можете откладывать сейчас. Дальше для каждого месяца считаю только <strong>изменение</strong> относительно сегодняшнего дня. Так обычная аренда не учитывается дважды.</p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Состояние в месяце</th>
+<th>Изменение остатка <code>Δ</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Обе старые квартиры, как сейчас</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Настя у Бориса, её договор закончен</td>
+<td><code>+G − ΔU − St</code></td>
+</tr>
+<tr>
+<td>Договор Насти закончен, Борис ещё в старой, новая уже оплачивается</td>
+<td><code>+G − N</code></td>
+</tr>
+<tr>
+<td>Живём в новой, обе старые закончены</td>
+<td><code>+B + G − N</code></td>
+</tr>
+<tr>
+<td>Обе старые + новая одновременно</td>
+<td><code>−N</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>Разовые расходы (бронь, кауце, комиссия, переезды, уборка, покраска, перекрытие дат) вычитаются в месяц оплаты.</p>
+<p><strong>Фонд на дату t:</strong> <code>F(t) = F0 + Σ(Z + Δ_m) по месяцам до t − Σ разовые платежи до t</code></p>
+<p><strong>Условие безопасности:</strong> <code>F(t) ≥ R</code> в любой день, где <code>R</code> — неприкосновенный запас. Возвраты старых кауце <code>D_B</code> и <code>D_G</code> в <code>F(t)</code> <strong>не входят</strong>. Они попадают в фонд только после фактического поступления на счёт.</p>
+<h3 id="42-какие-деньги-и-когда-нужны-п--уточнить-по-конкретной-квартире">4.2 Какие деньги и когда нужны <span class="tag t-p">П — уточнить по конкретной квартире</span></h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Момент</th>
+<th>Что платится</th>
+<th>Маршрут 1</th>
+<th>Маршрут 2/3</th>
+<th>Маршрут 4</th>
+<th>Маршрут 5</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Бронь (rezervace)</td>
+<td><code>Rez</code>: зачитывается в кауце или в первый платёж — или нет?</td>
+<td>~1–10.02</td>
+<td>~20.02–5.03</td>
+<td>~20.03–5.04</td>
+<td>~20.04–5.05</td>
+</tr>
+<tr>
+<td>Подписание</td>
+<td>Кауце <code>K</code>, комиссия <code>P</code> (с НДС, если агент — плательщик НДС), часто первый месяц</td>
+<td>~10–15.02</td>
+<td>~5–12.03</td>
+<td>~5–12.04</td>
+<td>~5–12.05</td>
+</tr>
+<tr>
+<td>Ключи</td>
+<td>Первый месяц <code>N</code> (если не оплачен раньше), перекрытие <code>X</code>, переезд <code>M</code></td>
+<td>01.03</td>
+<td>25–31.03</td>
+<td>~27–30.04</td>
+<td>~27–31.05</td>
+</tr>
+<tr>
+<td>Сдача старых</td>
+<td>Уборка, покраска, мелкий ремонт <code>C_B</code>, <code>C_G</code>; последние платежи</td>
+<td>26.02–31.03</td>
+<td>26.02–31.03</td>
+<td>26.02–30.04</td>
+<td>26.02–31.05</td>
+</tr>
+<tr>
+<td>Позже</td>
+<td>Доплаты по годовым расчётам услуг <code>V_B</code>, <code>V_G</code></td>
+<td>2027–2028</td>
+<td>то же</td>
+<td>то же</td>
+<td>то же</td>
+</tr>
+<tr>
+<td><strong>Зарплат до подписания</strong> (<code>n</code>)</td>
+<td>—</td>
+<td><strong>~3</strong></td>
+<td><strong>~4</strong></td>
+<td><strong>~5</strong></td>
+<td><strong>~6</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><code>n</code> — сколько ежемесячных поступлений придёт с сегодняшнего дня до подписания. Точное число зависит от дат зарплат, которые неизвестны.</p>
+<p><strong>Стартовый платёж:</strong> <code>START = Rez(если не зачитывается) + K + P + N_первый + X</code></p>
+<p><strong>Нужный ежемесячный остаток, чтобы успеть к подписанию:</strong> <code>Z_min = (START + разовые расходы до подписания + R − F0 − ΣΔ до подписания) / n</code></p>
+<p><strong>Пик расходов</strong> обычно приходится на 1–2 недели вокруг ключей. В это время одновременно идут <code>START</code>, переезд, уборка и покраска, а возвраты кауце ещё не пришли. Нужно проверить <code>F(t) ≥ R</code> и в эту неделю, не только в день подписания.</p>
+<p><strong><span class="tag t-pr">Пр</span> Пример для маршрута 2.</strong> START = 96 620, переезд и уборка Насти в феврале = 10 000, R = 30 000, F0 = 0, ΣΔ до подписания ≈ 0 → <code>Z_min ≈ (96 620 + 10 000 + 30 000) / 4 ≈ 34 155 в месяц</code>. При F0 = 60 000 → ≈ 19 155 в месяц.</p>
+<h3 id="43-что-могут-значить-ваши-70-000--110-000">4.3 Что могут значить ваши 70 000 / 110 000</h3>
+<p>Обратный расчёт, <strong>не цены рынка</strong>. Обозначения: <code>A</code> — аренда без услуг, <code>s</code> — авансы за услуги. Кауце вместе с договорными штрафами не может быть больше 3 месячных аренд без услуг <span class="tag t-z">З</span>.</p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th><span class="tag t-pr">Пр</span> Аренда + услуги</th>
+<th>Кауце 2×, без комиссии</th>
+<th>Кауце 2× + комиссия (1 аренда + 21 % НДС)</th>
+<th>Кауце 3× + комиссия</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>22 000 + 4 000</td>
+<td><strong>70 000</strong></td>
+<td>96 620</td>
+<td>118 620</td>
+</tr>
+<tr>
+<td>25 000 + 4 500</td>
+<td>79 500</td>
+<td><strong>109 750</strong></td>
+<td>134 750</td>
+</tr>
+</tbody>
+</table></div>
+<p>Вывод: <strong>70 000 хватает примерно только на квартиру без агента, с кауце 2× и арендой около 22 000.</strong> <strong>110 000 — это уже с комиссией агента, кауце 2× и арендой около 25 000.</strong> Сначала нужно решить целевую аренду <code>N</code> и записать, что входит в ваши 70/110: кауце, комиссия, НДС, бронь, первый месяц, услуги. Иначе легко посчитать что-то дважды. Расходы на сдачу старых квартир (<code>C_B</code>, <code>C_G</code>) и переезды (<code>M</code>) в 70/110 не входят — их нужно добавить отдельно.</p>
+<h3 id="44-возвраты-старых-кауце--отдельно-не-в-фонде">4.4 Возвраты старых кауце — отдельно, не в фонде</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th></th>
+<th>Сумма</th>
+<th>Когда</th>
+<th>Что могут удержать</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Кауце Насти <code>D_G</code></td>
+<td>15 500 по тексту договора + проценты; проверить, сколько реально внесено</td>
+<td>Закон: «při skončení nájmu», без срока в днях <span class="tag t-z">З</span>. На практике бывают задержки — в фонд не включать</td>
+<td>Только определённые или доказанные долги: аренда, ущерб сверх обычного износа. Будущую доплату за услуги до расчёта засчитать нельзя <span class="tag t-z">З</span>. Расчёт может прийти в 2028 году — держите резерв <code>V_G</code></td>
+</tr>
+<tr>
+<td>Кауце Бориса <code>D_B</code></td>
+<td>неизвестна (раздел IV)</td>
+<td>то же</td>
+<td>то же; плюс возможный спор о покраске</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="45-чего-не-хватает-для-точного-прогноза">4.5 Чего не хватает для точного прогноза</h3>
+<p><code>F0</code>, <code>Z</code> и даты зарплат, <code>R</code>, <code>B</code> (раздел IV), актуальный <code>G</code> в 2027 году, целевой <code>N</code>, состав 70/110, <code>St</code>, <code>M</code>, <code>Mx</code>, <code>C_B</code> (покраска), <code>C_G</code>, <code>X</code>, ответы собственников о <code>E</code>, <code>D_B</code>.</p>
+</section>
+<section class="sec" id="5-как-защитить-кауце">
+<h2>5. Как защитить кауце</h2>
+<p><strong>До выезда</strong></p>
+<ol type="1">
+<li><p>Найти <strong>входной протокол</strong> и фото при заезде.</p>
+<ul>
+<li>Настя: отметить уже записанные дефекты (трещина светильника в туалете, повреждённая дверца под раковиной).</li>
+<li>Настя: сверить оба приложения со списками мебели, техники и ключей. Они расходятся, например по стиральной машине. Решающий документ — <em>подписанный</em> входной протокол.</li>
+</ul></li>
+<li><p><strong>Предварительный осмотр</strong> за 2–4 недели до сдачи. Попросить собственника письменно (e-mail подойдёт как доказательство) перечислить, что он хочет исправить. Затем согласовать это письменно.</p></li>
+<li><p><strong>Покраска у Бориса</strong> <span class="tag t-d">Д: VI.5 «vymalovaný»</span>. По закону малярные работы — обычное обслуживание за счёт арендатора <span class="tag t-z">З: NV 308/2015 § 2</span>. MMR при этом пишет две вещи одновременно <span class="tag t-z">З</span>:</p>
+<ul>
+<li>если покраска нужна из-за обычного износа, платит арендатор;</li>
+<li>собственник не может <em>автоматически</em> требовать покраску, если квартира использовалась обычно.</li>
+</ul>
+<p><strong>Судебная практика.</strong> Решения Верховного суда именно о пункте «сдать покрашенной» не нашлось.</p>
+<ul>
+<li>Апелляционный суд Праги (MS Praha, 16 Co 107/2022) отказал собственнику в деньгах за покраску. Основание: договор такой обязанности не ставил, а речь шла об обычном износе после ~2,5 лет аренды.</li>
+<li>В договоре Бориса обязанность прямо записана. Можно ли её применить после одного года аренды без износа сверх обычного — открытый вопрос (§ 2235, § 2239). Даже рабочая группа MMR в 2025 году назвала соотношение договора и NV 308/2015 «неясным».</li>
+</ul>
+<p>Практический путь — добиться письменного решения <em>до</em> сдачи:</p>
+<ul>
+<li>(а) Борис красит сам или через мастера по смете;</li>
+<li>(б) собственник принимает без покраски;</li>
+<li>(в) согласованная фиксированная сумма вместо покраски (сравнить со сметой маляра).</li>
+</ul>
+<p>Нельзя оставлять «удержим сколько посчитаем».</p></li>
+<li><p><strong>Мелкий ремонт</strong> заранее. По договору Насти — до 1 000 Kč за один ремонт <span class="tag t-d">Д</span>. По закону с 1.1.2026 лимит 1 500 Kč за ремонт и 150 Kč/м² в год <span class="tag t-z">З</span>. Её договорный лимит для неё выгоднее закона, применяйте его. Всё дороже лимита оплачивает собственник, если это не ущерб по вашей вине.</p></li>
+<li><p><strong>Генеральная уборка</strong> до осмотра: фото и видео с датой, чек клининга. Это отвечает на пункт договора Насти об удержании 2 000 Kč за отсутствие уборки.</p></li>
+<li><p><strong>Перерегистрировать или сохранить страховку</strong> Бориса до дня сдачи (раздел V) <span class="tag t-d">Д</span>. Потом перенести на новый адрес.</p></li>
+</ol>
+<p><strong>В день сдачи</strong></p>
+<ol start="7" type="1">
+<li>Фото и видео каждой комнаты, <strong>показания счётчиков</strong> (фото с номером счётчика), фото переданных ключей по количеству.</li>
+<li><strong>Протокол:</strong>
+<ul>
+<li>записать только состояние квартиры, показания счётчиков и ключи;</li>
+<li>не подписывать неизвестные суммы и общее признание долга;</li>
+<li>не оставлять пустые поля для «доплаты»;</li>
+<li>если не согласны, писать «nesouhlasím s …, protože …»;</li>
+<li>забрать свой экземпляр.</li>
+</ul></li>
+<li>В протокол или отдельным письмом записать: номер счёта, дату возврата кауце и <strong>проценты</strong>.
+<ul>
+<li><strong>Срок возврата.</strong> Кауце нужно вернуть «при skončení nájmu» (§ 2254 odst. 2). Тридцатидневного срока в законе нет <span class="tag t-z">З</span>.</li>
+<li><strong>Удержания.</strong> Засчитать в кауце собственник может только <em>определённые или доказанные</em> долги (§ 1987 odst. 2; MS Praha 16 Co 107/2022). Будущая доплата по годовому расчёту услуг ещё не наступила: она возникает только после доставки расчёта (zákon 67/2013 § 7). Права удерживать часть кауце «до расчёта» по закону нет. MMR в 2025 году прямо писал, что действующий закон этого не позволяет, а такие изменения пока только обсуждаются <span class="tag t-z">З</span>. Согласиться на небольшое удержание можно добровольно, но вы не обязаны.</li>
+<li><strong>Проценты.</strong> Отказ от процентов недействителен (§ 2254 odst. 2; MMR) <span class="tag t-z">З</span>. Ставка «не ниже законной» нигде точно не определена. Суд в деле 16 Co 107/2022 применил обычную ставку банковских кредитов на момент подписания договора (§ 1802): 8,63 % годовых для договора 2017 года. <span class="tag t-pr">Пр</span> Ориентир для кауце Насти 15 500 за ~3 года: при 4,5 % — около 2 100 Kč, при 8,6 % — около 4 000 Kč. Сумма спорная, но требовать стоит.</li>
+</ul></li>
+</ol>
+<p><strong>После сдачи</strong></p>
+<ol start="10" type="1">
+<li>Новый адрес — письменно. Борису — заказным письмом (VII.5).</li>
+<li>Годовые расчёты услуг (за 2026 — до 30.04.2027, за 2027 — до 30.04.2028): проверить, попросить копии документов, возражения — в течение 30 дней <span class="tag t-z">З</span>.</li>
+<li>Если кауце не вернули в согласованный срок — письменная претензия (výzva) с новым сроком. При дальнейшей задержке можно требовать проценты за просрочку (repo-ставка ČNB + 8 п.п.) <span class="tag t-z">З</span> и обращаться в суд. Не стоит обещать себе возврат всей суммы — удержание за подтверждённый ущерб законно.</li>
+</ol>
+</section>
+<section class="sec" id="6-запасные-планы">
+<h2>6. Запасные планы</h2>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Что случилось</th>
+<th>Что делать</th>
+<th>Чего не делать</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Новой квартиры нет</strong> к ~25.02 (для 1.04)</td>
+<td>1) Включить подготовленную в декабре договорённость о коротком продлении у Бориса и новое Potvrzení для Насти (маршрут 4) или ещё одно продление договора Насти. 2) Временное жильё допустимо <strong>только с документом</strong>, который примет OAMP: договор о проживании или форма Potvrzení от хозяина с заверенной подписью. Бронь Airbnb, скорее всего, не подойдёт [З/П]. Цена: <code>T_врем + St + Mx</code>. 3) Снизить требования к квартире или расширить район</td>
+<td>Не оставаться в квартире после окончания без письменного согласия. Собственник вправе получать возмещение в размере аренды до фактической сдачи (§ 2295) и требовать возмещения ущерба. С 2026 года есть быстрый судебный приказ о выселении: 15 дней (§ 175a o.s.ř.) <span class="tag t-z">З</span>. Пункт договора Насти о 1 000 Kč в день не означает «можно остаться за эту цену»</td>
+</tr>
+<tr>
+<td><strong>Денег к подписанию меньше <code>START + R</code></strong></td>
+<td>Маршрут 4 или 5. Искать без агента, договариваться о кауце 2× или частями, снизить <code>N</code></td>
+<td>Не брать деньги из неприкосновенного запаса. Не считать старые кауце доступными</td>
+</tr>
+<tr>
+<td><strong>Собственники Бориса отказали в продлении</strong></td>
+<td>Маршрут 2 или 3, договор кончается 31.03. Отказ должен быть известен до точки решения (11–15.01)</td>
+<td>Не отказываться от уведомления о непродлении ради «вдруг продлят»</td>
+</tr>
+<tr>
+<td><strong>Компания Насти отказала в продлении</strong></td>
+<td>Маршрут 2 (Настя у Бориса, по договору) или маршрут 1 с новой квартирой, договор которой начинается сразу после её договора</td>
+<td>Не планировать «пару недель без договора»: для визы Насти это исключено</td>
+</tr>
+<tr>
+<td><strong>Жить вдвоём у Бориса нельзя</strong> (место, отношения с собственниками, нет документа для OAMP)</td>
+<td>Маршрут 3 или 1</td>
+<td>Не прятать второго жильца: уведомление обязательно, иначе это основание для výpověď <span class="tag t-z">З</span></td>
+</tr>
+<tr>
+<td><strong>Уведомление о непродлении пропущено</strong></td>
+<td>Договор продлится до 31.03.2028. Выход — только по соглашению или по § 2287 при реальном основании и с трёхмесячным сроком</td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>Кауце задерживается</strong></td>
+<td>См. раздел 5, пункт 12. Фонд и так рассчитан без кауце</td>
+<td>—</td>
+</tr>
+</tbody>
+</table></div>
+</section>
+<section class="sec" id="7-самые-важные-вопросы">
+<h2>7. Самые важные вопросы</h2>
+<p>Ответы на вопросы 1–4, 8 и 9 нужны до точки решения 11–15.01.</p>
+<ol type="1">
+<li><strong>Раздел IV договора Бориса.</strong> Аренда, услуги, кауце, штрафы, срок возврата кауце. Были ли допсоглашения? Где живут собственники (для срока доставки письма)?</li>
+<li><strong>Подписанный договор Насти или допсоглашение с датами 2027.</strong>
+<ul>
+<li>Точная дата окончания: «до 01.03.2027» — включительно или нет?</li>
+<li>Актуальная аренда: 12 000 или 11 500?</li>
+<li>Сколько кауце реально внесено?</li>
+<li>Как теперь звучит пункт о «первых шести месяцах»?</li>
+<li>Время передачи 15:00 — сохраняется ли?</li>
+</ul></li>
+<li><strong>Деньги.</strong> Свободные накопления <code>F0</code>. Сколько вдвоём откладываете в месяц <code>Z</code> и когда приходят зарплаты. Какой неприкосновенный запас <code>R</code> хотите держать. Какую месячную сумму <code>N</code> готовы платить за новую квартиру.</li>
+<li><strong>Состав 70 000 / 110 000.</strong> Включены ли кауце, комиссия, НДС, первый месяц, услуги, бронь.</li>
+<li><strong>Физически.</strong> Площадь квартиры Бориса, много ли у Насти вещей и мебели (её квартира меблирована?). Нужен ли склад.</li>
+<li><strong>Отношения с собственниками.</strong> Насколько они готовы на гибкость (досрочный выход, короткое продление, ранние ключи)?</li>
+<li>Есть ли у вас договоры на интернет и энергию на своё имя со сроками расторжения?</li>
+<li><strong>Виза Насти.</strong> Какой тип (виза или ВНЖ) и до какой даты действует? Попадает ли продление на февраль–май 2027? Какой документ о жилье она подавала в OAMP в прошлый раз (договор аренды или подтверждение)? Борис — гражданин ЕС или тоже по визе?</li>
+<li><strong>Есть ли у Бориса datová schránka или электронная подпись?</strong> С ними форму Potvrzení для Насти можно отправить без заверения. Как собственники Бориса отнесутся к тому, что его договор (с пунктом «других жильцов не будет») окажется в деле OAMP? Уведомить их о Насте нужно в любом случае.</li>
+</ol>
+</section>
+<section class="sec" id="8-разбор-договоров-и-закона">
+<h2>8. Разбор договоров и закона</h2>
+<p><strong>Что с законом сейчас</strong> (проверено 08.11.2026):</p>
+<ul>
+<li>С 2025 года в нормах об аренде жилья (§ 2235–2301 Гражданского кодекса, zákon 89/2012 Sb.) изменилось только одно: в § 2239 добавлен пункт 2 о доставке через datové schránky. Изменение действует с 1.1.2026.</li>
+<li>До 1.7.2027 других изменений в этих нормах не принято. Проект «большой новеллы аренды» MMR в парламент так и не внесён.</li>
+<li>С 1.1.2026 действуют ещё две вещи:
+<ul>
+<li>новые лимиты мелкого ремонта: 1 500 Kč за ремонт и 150 Kč/м² в год (NV 493/2025 Sb.);</li>
+<li><strong>упрощённый судебный приказ о выселении</strong> (rozkaz k vyklizení, § 175a o.s.ř.). Суд может выдать его без заседания, если арендатор остался после окончания аренды. Собственник должен был письменно потребовать выехать не позже чем за 14 дней до иска. У арендатора 15 дней, чтобы выехать или подать возражение.</li>
+</ul></li>
+</ul>
+<p><strong>Общее правило защиты арендатора.</strong> Условия договора, которые сокращают права арендатора по закону, не учитываются (§ 2235 odst. 1) <span class="tag t-z">З</span>. Не учитываются и условия, которые накладывают на арендатора «явно несоразмерную» обязанность (§ 2239 odst. 1) <span class="tag t-z">З</span>. Поэтому пункт договора ещё не значит, что его можно исполнить. Но и обратного это не означает: что считать «явно несоразмерным», решает суд.</p>
+<h3 id="81-договор-бориса">8.1 Договор Бориса</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Пункт <span class="tag t-d">Д</span></th>
+<th>Закон и разъяснения <span class="tag t-z">З</span></th>
+<th>Вывод и действие</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>III.1.</strong> Срок 12 месяцев с 01.04.2026. Если ни одна сторона письменно не сообщит за 60 дней до конца, договор продлевается ещё на 12 месяцев</td>
+<td>Аренда на срок кончается по истечении срока. В законе есть своё молчаливое продление (§ 2285): если арендатор живёт ещё 3 месяца после конца, а собственник письменно не попросил выехать. Но § 2285 не действует, «ujednají-li si strany něco jiného». Правило «за 60 дней» — договорное, в законе его нет</td>
+<td>Пункт считать действующим. <strong>Уведомление о непродлении обязательно.</strong> Конец срока — 31.03.2027. 60 дней назад от него — 30.01 (сб). Перенос из-за выходного (§ 607) по тексту закона относится к «lhůty». Для обратного счёта, по академическому мнению (Brim, Právník 2/2024), он не применяется вообще. Отсюда безопасная граница доставки — 29.01, а цель — ~20.01</td>
+</tr>
+<tr>
+<td>Форма уведомления — «písemně»</td>
+<td>Письменная форма требует подписи (§ 561). E-mail сохраняет письменную форму только если понятно, кто действует (§ 562). MMR: обычный e-mail без признанной электронной подписи для výpověď недействителен. Заказное письмо считается доставленным на 3-й рабочий день, а за границу — на 15-й (§ 573). Действие вступает в силу с момента доставки (§ 570)</td>
+<td>Письмо с собственноручной подписью <strong>каждому</strong> собственнику, заказное с уведомлением о вручении. Плюс скан по e-mail, плюс лучше вручить лично и получить подпись на копии</td>
+</tr>
+<tr>
+<td><strong>VI.2.</strong> Трёхмесячная výpověď арендатора при существенном изменении обстоятельств</td>
+<td>§ 2287 — тот же смысл. Срок идёт с 1-го числа месяца после доставки (§ 2286). MMR: 3 месяца; примеры оснований — смена работы с переездом, ребёнок, уход за родственником, своё жильё</td>
+<td>Для конца 28.02 výpověď нужно доставить до 30.11.2026. Переезд к партнёру — спорное основание; если собственники не согласны, это риск суда. <strong>Не рекомендую.</strong> Лучше письменное соглашение</td>
+</tr>
+<tr>
+<td><strong>VI.5.</strong> Сдать пустой и <strong>покрашенной</strong>, с учётом обычного износа; протокол</td>
+<td>Вернуть в том состоянии, в каком получил, «nehledě na běžné opotřebení» (§ 2293 odst. 1). Покраска — обычное обслуживание за счёт арендатора (NV 308/2015 § 2). MMR: если покраска нужна из-за обычного износа, платит арендатор. Но собственник не может <em>автоматически</em> требовать покраску, если квартира использовалась обычно</td>
+<td>Нельзя сказать заранее, что покраска обязательна или что требование недействительно. Зависит от состояния стен, длины аренды (один год) и того, была ли квартира покрашена при въезде. Действие: предварительный осмотр и <strong>письменная</strong> договорённость (раздел 5, пункт 3)</td>
+</tr>
+<tr>
+<td><strong>VI.6.</strong> Пользование после конца — без правового основания</td>
+<td>Собственник вправе получать возмещение в размере договорной аренды до дня фактической сдачи (§ 2295). Плюс возможное возмещение ущерба и судебный приказ о выселении (с 2026)</td>
+<td>Не планировать «пожить ещё неделю». Любая задержка — только по письменному согласию</td>
+</tr>
+<tr>
+<td><strong>VI.7.</strong> Собственник не обязан давать заменяющее жильё</td>
+<td>Для окончания по сроку закон заменяющее жильё не предусматривает <span class="tag t-p">П</span></td>
+<td>На маршруты не влияет</td>
+</tr>
+<tr>
+<td><strong>II.2.</strong> «Другие лица жить не будут»; об изменениях для расчёта услуг — в течение недели</td>
+<td>Арендатор вправе принимать в своё хозяйство кого угодно (§ 2272 odst. 1). О росте числа жильцов нужно сообщить без лишнего промедления. Если не сообщить и за 2 месяца, это считается серьёзным нарушением. Собственник может оговорить своё согласие, <strong>кроме близкого лица</strong> (§ 2272 odst. 2). Близкими считаются и «osoby, které spolu trvale žijí», и люди «v poměru obdobném» семейному (§ 22). MMR прямо называет партнёра, «druh a družka». Число жильцов должно соответствовать размеру квартиры (§ 2272 odst. 3)</td>
+<td>Запрет на других жильцов вряд ли можно применить к партнёрше: он сокращает законное право (§ 2235). Но <strong>уведомить письменно в течение недели</strong> (по договору) — бесплатно и снимает спор. Если Настя ничего не платит Борису за жильё, это совместное хозяйство, а не поднаём. Даже поднаём <em>части</em> квартиры, где сам арендатор живёт, закон разрешает без согласия (§ 2274) <span class="tag t-z">З</span>. Уведомлять всё равно нужно. Суд оценивает «постоянное» совместное проживание по намерению, а не только по сроку (NS 26 Cdo 1215/2003) <span class="tag t-z">З</span>. Решения Верховного суда именно о партнёрше по § 2272 не нашлось. Для распределения общих услуг (лифт, уборка, вывоз мусора) жилец считается, только если будет жить дольше 2 месяцев за расчётный период (zákon 67/2013 § 2 písm. g). В маршруте 2 (1 месяц) это, скорее всего, не так, а в маршрутах 4 и 5 — да. Об изменении числа таких жильцов сообщить письменно (§ 12). За опоздание по умолчанию штраф 50 Kč в день (§ 13)</td>
+</tr>
+<tr>
+<td><strong>V.</strong> Поддерживать состояние, страховка имущества и ответственности</td>
+<td>—</td>
+<td>Страховку держать до дня сдачи, потом перенести на новый адрес</td>
+</tr>
+<tr>
+<td><strong>VII.2.</strong> Изменения — письменно, подписи обеих сторон</td>
+<td>—</td>
+<td>Любое соглашение (досрочно, продление, сдача 1.04) подписывают <strong>оба</strong> собственника</td>
+</tr>
+<tr>
+<td><strong>VII.5.</strong> Письма — на последний известный адрес; новый адрес — заказным письмом; действует и после окончания</td>
+<td>—</td>
+<td>После выезда — заказное письмо с новым адресом и счётом. Иначе расчёт услуг и переписка о кауце уйдут в пустоту</td>
+</tr>
+<tr>
+<td><strong>IV — нет данных</strong></td>
+<td>Кауце и договорные штрафы <em>вместе</em> — не больше 3 месячных аренд (§ 2254 odst. 1)</td>
+<td>Неизвестны аренда, услуги, кауце, штрафы. <strong>Утверждать, что штрафов нет, нельзя</strong></td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="82-договор-насти-по-неподписанному-docx-сверить-с-подписанным">8.2 Договор Насти (по неподписанному DOCX; сверить с подписанным)</h3>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Пункт <span class="tag t-d">Д</span></th>
+<th>Закон и разъяснения <span class="tag t-z">З</span></th>
+<th>Вывод и действие</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>III.a.</strong> Срок (в файле 01.03.2024–28.02.2025). Продление — по согласованию не позднее чем за месяц до окончания. Автопродления нет</td>
+<td>§ 2285 (молчаливое продление) действует, только если Настя проживёт 3 месяца после конца без письменного требования выехать — к вам не относится</td>
+<td>Нужна точная дата из подписанного документа. «До 01.03.2027» может означать как последний день 28.02, так и 01.03. Время сдачи 15:00 — в день окончания. 28.02.2027 — воскресенье. Отдельно уведомлять об окончании по тексту не нужно. Но <strong>лучше письменно подтвердить</strong> с компанией дату и час сдачи</td>
+</tr>
+<tr>
+<td><strong>III.b.</strong> Výpověď — только по законным основаниям, срок не меньше 2 месяцев с 1-го числа после доставки</td>
+<td>§ 2287 + § 2286. MMR называет 3 месяца. Договорные 2 месяца выгоднее для арендатора <span class="tag t-p">П: условие в пользу арендатора не противоречит § 2235</span></td>
+<td>Без основания досрочно уйти нельзя. Для маршрутов не нужно: договор кончается сам</td>
+</tr>
+<tr>
+<td><strong>III.c–d, VI.</strong> Odstoupení собственника, «15-й день после отправки»</td>
+<td>Нормы о прекращении арендатору квартиры не урезаются (§ 2235). Для собственника закон даёт výpověď (§ 2288, § 2291) <span class="tag t-z">З</span></td>
+<td>Не относится к плану, если платежи и правила соблюдаются</td>
+</tr>
+<tr>
+<td><strong>IV.a.</strong> Аренда 12 000 цифрами / 11 500 прописью</td>
+<td>—</td>
+<td>Проверить подписанный экземпляр и реальные платежи. В расчётах — <code>G</code> как фактическая сумма</td>
+</tr>
+<tr>
+<td><strong>IV.d.</strong> Оплата до 25-го числа предыдущего месяца</td>
+<td>—</td>
+<td>Последний платёж: за февраль — до 25.01 (маршруты 1 и 2); за март — до 25.02 (маршрут 3). Если договор до 01.03 включительно, выяснить, нужно ли платить за 1 мартовский день</td>
+</tr>
+<tr>
+<td><strong>Годовой расчёт услуг,</strong> доплата за 15 дней</td>
+<td>Расчёт — не позже 4 месяцев после конца расчётного периода. Выплата — не позже 4 месяцев с доставки расчёта. Возражения — 30 дней (zákon 67/2013; MMR)</td>
+<td>Расчёт за 2026 и за 2027 придут уже после выезда. Нужен новый адрес и резерв <code>V_G</code></td>
+</tr>
+<tr>
+<td><strong>IV.f.</strong> Кауце 15 500 (5 000 + 10 500); проценты не платятся</td>
+<td>Кауце + штрафы в сумме ≤ 3 × аренда (§ 2254 odst. 1). При 12 000 это 36 000. Проценты «alespoň ve výši zákonné sazby» (§ 2254 odst. 2). MMR: отказ от процентов недействителен</td>
+<td>Сумма кауце в пределах. <strong>Проценты требовать.</strong> Точная ставка спорная (раздел 5, пункт 9). Сверить, сколько реально внесено</td>
+</tr>
+<tr>
+<td><strong>Потеря кауце при выходе раньше 6 месяцев</strong> (01.03–31.08.2024)</td>
+<td>MMR: штраф за досрочное окончание через výpověď нельзя согласовать действительно. Если арендатор выходит законно (по сроку, по соглашению, по § 2287), нарушения нет. Тогда условие урезает законное право и не учитывается (§ 2235) [З/П]</td>
+<td>В 2027 году условие не относится к делу: период закончился в 2024 году, и вы выходите по окончании срока. Если в подписанном допсоглашении его «перезапустили» — показать текст</td>
+</tr>
+<tr>
+<td><strong>III.f.</strong> 1 000 Kč за каждый день задержки</td>
+<td>С 1.7.2020 договорные штрафы в аренде жилья допускаются (NS 26 Cdo 2018/2023). Но вместе с кауце — не больше 3 × аренда (§ 2254). Явно несоразмерное не учитывается (§ 2239). Суд может снизить штраф (§ 2051). Отдельно действует возмещение в размере аренды (§ 2295)</td>
+<td>Это <strong>не разрешение</strong> остаться за 1 000 Kč в день и не предел ответственности. Задержка = штраф (в пределах лимита) + возмещение + риск приказа о выселении. Просто не задерживаться</td>
+</tr>
+<tr>
+<td><strong>Приложения:</strong> 2 000 Kč за отсутствие генеральной уборки</td>
+<td>Тот же лимит и тот же тест несоразмерности</td>
+<td>Сделать уборку, зафиксировать фото и чеком, записать в протокол «byt předán uklizený»</td>
+</tr>
+<tr>
+<td><strong>III.e.</strong> Сдать с оборудованием и всеми ключами после генеральной уборки, с учётом обычного износа, по протоколу; в приложениях — до 15:00</td>
+<td>§ 2292: квартира сдана, когда собственник получил ключи и доступ. § 2293: состояние как при получении, без учёта обычного износа</td>
+<td>Отдельной обязанности перекрашивать при выезде в тексте <strong>нет</strong>. Запись «квартира была покрашена» во входном протоколе обязанность не создаёт. Требовать покраску можно только при износе сверх обычного (MMR) <span class="tag t-z">З</span></td>
+</tr>
+<tr>
+<td><strong>Исходные дефекты</strong> (светильник в туалете, дверца под раковиной); списки мебели и ключей расходятся</td>
+<td>—</td>
+<td>Сверить с <strong>подписанным</strong> входным протоколом. Старые дефекты не оплачивать</td>
+</tr>
+<tr>
+<td><strong>III.h.</strong> Показы в последний месяц</td>
+<td>MMR: арендатор обязан давать показы в течение 3 месяцев до конца, при предварительном уведомлении</td>
+<td>Договорное условие (1 месяц) для Насти мягче. Согласовать удобные слоты</td>
+</tr>
+<tr>
+<td><strong>II.d.</strong> Не больше 2 жильцов; изменения — e-mail + заказное письмо за 7 дней</td>
+<td>§ 2272</td>
+<td>Если в маршруте 3 Борис временно живёт у Насти — это тоже второй жилец; уведомить</td>
+</tr>
+<tr>
+<td><strong>V.j.</strong> Поднаём — только с письменным согласием</td>
+<td>§ 2274: поднаём части квартиры, где арендатор сам живёт, разрешён и без согласия</td>
+<td>К маршрутам не относится. Партнёр в хозяйстве — не поднаём</td>
+</tr>
+<tr>
+<td><strong>V.d.</strong> Мелкий ремонт до 1 000 Kč за ремонт</td>
+<td>С 1.1.2026 закон: 1 500 Kč и 150 Kč/м² в год (NV 493/2025). Договор не может урезать права арендатора (§ 2235)</td>
+<td>Для Насти действует <strong>более выгодный договорный лимит 1 000 Kč</strong> <span class="tag t-p">П</span>. Всё, что дороже, — за счёт собственника, если это не ущерб по её вине</td>
+</tr>
+<tr>
+<td><strong>III.e.</strong> Собственник может сам войти, вывезти и хранить вещи при задержке</td>
+<td>Закон даёт собственнику возмещение (§ 2295) и судебный путь, включая приказ о выселении (§ 175a o.s.ř.). Самовольное выселение спорно <span class="tag t-p">П</span></td>
+<td>Не полагаться на этот пункт ни в какую сторону. Выехать вовремя</td>
+</tr>
+</tbody>
+</table></div>
+</section>
+<section class="sec" id="9-маршруты-подробно">
+<h2>9. Маршруты подробно</h2>
+<p>Общее для всех маршрутов:</p>
+<ul>
+<li>Уведомление Бориса о непродлении — до 15.01, отправить обоим собственникам.</li>
+<li>Точная дата и час сдачи квартиры Насти.</li>
+<li>Физический выезд не прекращает аренду. Новый жилец, которого вы нашли, сам по себе тоже не освобождает от договора. Аренда кончается только по истечении срока, по письменному соглашению или по výpověď (§ 2286–2288) <span class="tag t-z">З</span>.</li>
+</ul>
+<h3 id="маршрут-1--новая-квартира-к-1-марта-борис-платит-март">Маршрут 1 — новая квартира к 1 марта, Борис платит март</h3>
+<ul>
+<li><strong>Согласия:</strong> новый собственник (ключи 1.03 утром или раньше). Если Настя сдаёт квартиру 26.02 или 28.02, она 1–3 ночи живёт у Бориса. Её договор при этом ещё действует, так что для визы промежутка нет. Квартира Бориса в марте — бесплатный буфер, потому что март всё равно оплачен.</li>
+<li><strong>Виза:</strong> договор новой квартиры должен начинаться не позже дня после окончания договора Насти (01.03 или 02.03). О смене адреса — одно сообщение в OAMP.</li>
+<li><strong>Сроки:</strong> поиск во второй половине января. Бронь ~1–10.02. Подписание и <code>START</code> ~10–15.02. Передача квартиры Насти 26.02 или 01.03. Сдача квартиры Бориса — до 31.03, можно спокойно, в течение марта.</li>
+<li><strong>Деньги:</strong> <code>START</code> к середине февраля, это всего ~3 зарплаты. Март: <code>+G − N</code> (Борис платит и старую, и новую). Один переезд для каждого. Покраска у Бориса — в марте, без спешки.</li>
+<li><strong>Риски:</strong> короткое окно поиска. Если квартира не найдена к ~15.02, маршрут превращается в маршрут 2 или 3. Но только если страховка для Насти на март (договор у Бориса или продление её договора) решена до ~22–25.01, пока ещё можно согласовать продление.</li>
+<li><strong>Плюс:</strong> единственный маршрут, где обе сдачи разнесены на месяц и нет перекрытия <code>X</code>.</li>
+</ul>
+<h3 id="маршрут-1а--то-же-но-борис-выходит-2802-по-соглашению">Маршрут 1а — то же, но Борис выходит 28.02 по соглашению</h3>
+<ul>
+<li><strong>Согласия:</strong> письменное соглашение о прекращении (dohoda o skončení nájmu) с <strong>обоими</strong> собственниками (VII.2) <span class="tag t-d">Д</span>. Односторонняя výpověď — только по § 2287 и с доставкой до 30.11.2026; не рекомендую (раздел 3).</li>
+<li><strong>Деньги:</strong> экономия <code>B</code> за март минус плата <code>E</code>. Но обе сдачи выпадают на последние дни февраля, а 28.02 — воскресенье. Нужен ранний доступ к новой квартире (<code>X</code>).</li>
+<li><strong>Смысл:</strong> только если <code>E</code> около нуля. В примере маршрут 1а выигрывает у маршрута 2 при <code>E &lt; 1 500</code>.</li>
+</ul>
+<h3 id="маршрут-2--настя-у-бориса-в-марте-новая-к-1-апреля">Маршрут 2 — Настя у Бориса в марте, новая к 1 апреля</h3>
+<ul>
+<li><strong>Согласия:</strong>
+<ul>
+<li><strong>Документ о жилье для Насти на март</strong> — обязательное условие визы <span class="tag t-v">В</span>.
+<ul>
+<li>Рекомендую форму «Potvrzení o zajištění ubytování». Её подписывает Борис как арендатор («oprávněný uživatel») с заверенной подписью (50 Kč) или прямо в OAMP. Можно отправить из его datová schránka. К форме — копия договора Бориса <span class="tag t-z">З: § 31 odst. 5 zákona 326/1999; ipc.gov.cz</span>.</li>
+<li>Согласие собственников OAMP не требует, в том числе для поднайма <span class="tag t-z">З</span>.</li>
+<li>Не проверено: как OAMP отнесётся к пункту договора Бориса «других жильцов не будет».</li>
+<li>Платный поднаём делает Бориса «ubytovatel»: сообщить о Насте в полицию за 3 рабочих дня, вести учёт, штраф до 50 000 Kč (§ 99–102, § 156). Исключение для близких лиц по закону есть, но применится ли оно к партнёрам, не проверено <span class="tag t-z">З</span>. Поэтому проще бесплатное проживание по форме Potvrzení.</li>
+</ul></li>
+<li>Собственники Бориса — <strong>уведомление</strong> о втором жильце в течение недели (II.2) <span class="tag t-d">Д</span>.</li>
+<li>Как жилец в хозяйстве Бориса Настя по закону может жить и без согласия собственника, если она его близкое лицо <span class="tag t-z">З</span>. Но для визы нужен документ — форма Potvrzení (см. выше).</li>
+<li>Новый собственник — ключи ~25–27.03, <strong>либо</strong> собственники Бориса — сдача 1–2.04, письменно.</li>
+</ul></li>
+<li><strong>Сроки:</strong> до 15.01 уведомление о непродлении. 26.02 или 01.03 сдача квартиры Насти. До 12.03 подписание. До 25.03 покраска у Бориса. 31.03 сдача квартиры Бориса.</li>
+<li><strong>Деньги:</strong> март <code>+G − ΔU − St</code>, плюс лишний переезд вещей Насти <code>Mx</code>, плюс перекрытие <code>X</code>. <code>START</code> к ~10.03, ~4 зарплаты. <code>ΔU</code> здесь — в основном реальное потребление энергии и воды. Для распределения общих услуг она при месячном проживании, скорее всего, не считается: порог — больше 2 месяцев <span class="tag t-z">З</span>.</li>
+<li><strong>Виза:</strong> срок в форме Potvrzení начинается не позже дня после окончания договора Насти и заканчивается не раньше дня перед началом новой аренды. Он не может выходить за срок договора самого Бориса. О смене адреса сообщить в OAMP в течение 30 дней — и у Бориса, и потом в новой квартире <span class="tag t-z">З</span>.</li>
+<li><strong>Риски:</strong> 31.03 кончается договор Бориса, а с ним и основание для Potvrzení Насти. Если к ~25.02 новая квартира не подписана, нужно включить подготовленную страховку: продление у Бориса и новое Potvrzení. Временное жильё — только с договором на имя Насти. Ещё один риск — месяц тесноты.</li>
+<li><strong>Запасной путь:</strong> маршрут 4 (о нём нужно поговорить с собственниками ещё в декабре).</li>
+</ul>
+<h3 id="маршрут-3--договор-насти-продлевается-до-31-марта">Маршрут 3 — договор Насти продлевается до 31 марта</h3>
+<ul>
+<li><strong>Согласия:</strong> компания Насти, <strong>письменное</strong> допсоглашение (VII.d) <span class="tag t-d">Д</span>. Согласовать нужно не позднее чем за месяц до окончания (III.a) <span class="tag t-d">Д</span>: при окончании 28.02 — до 28.01, при окончании 01.03 — до 01.02. Цель — подписать до ~25.01.</li>
+<li><strong>Деньги:</strong> <code>+G</code> за март (если сумма не изменится — 15 500; проверить). Склада и второго переезда нет. Нужен ранний доступ <code>X</code>.</li>
+<li><strong>Риски:</strong> две сдачи и два переезда в одну неделю, сразу после Пасхи. Развести их: Настя сдаёт 30.03, Борис — 31.03. Если к ~25.02 новой квартиры нет, нужно ещё одно продление договора Насти (за месяц до 31.03).</li>
+<li><strong>Виза:</strong> самый простой маршрут. Договор Насти просто продлевается, одна смена адреса.</li>
+<li><strong>Когда выбирать:</strong> если у Бориса жить вдвоём неудобно, либо <code>ΔU + St + Mx</code> близко к <code>G</code>.</li>
+</ul>
+<h3 id="маршрут-4--договор-бориса-до-30-апреля-новая-к-1-мая">Маршрут 4 — договор Бориса до 30 апреля, новая к 1 мая</h3>
+<ul>
+<li><strong>Согласия:</strong> допсоглашение, подписанное <strong>обоими</strong> собственниками (VII.2) <span class="tag t-d">Д</span>. В нём: конкретная дата окончания 30.04.2027 и прямо написано, что годовое автопродление не применяется. Где Настя живёт в марте–апреле — отдельное решение:
+<ul>
+<li>(а) у Бориса — <code>2 × (ΔU + St)</code>, плюс Potvrzení для Насти на 2 месяца и копия допсоглашения о продлении договора Бориса;</li>
+<li>(б) продление договора Насти на 2 месяца — <code>2 × G</code>. В примере это самый дорогой вариант.</li>
+</ul></li>
+<li><strong>Сроки:</strong> уведомление о непродлении — всё равно до 15.01. Продление подписать как можно раньше. Если до точки решения его нет, планировать маршрут 2 или 3. <code>START</code> к ~10.04, ~5 зарплат. Ключи — 30.04 или раньше: 1.05 — суббота и праздник.</li>
+<li><strong>Деньги:</strong> по сравнению с маршрутом 2 апрель обходится <code>B + ΔU + St + E</code> вместо <code>N</code>. Это замена апрельской новой аренды старой, а не лишний расход в размере всей аренды Бориса.</li>
+<li><strong>Риски:</strong> отказ или условия собственников, два месяца вдвоём, рынок в апреле.</li>
+<li><strong>Виза:</strong> если Настя у Бориса больше 2 месяцев за расчётный период, она учитывается и в распределении общих услуг <span class="tag t-z">З</span>.</li>
+</ul>
+<h3 id="маршрут-5--договор-бориса-до-31-мая-новая-к-1-июня">Маршрут 5 — договор Бориса до 31 мая, новая к 1 июня</h3>
+<ul>
+<li>То же, что маршрут 4, но на месяц дольше. <code>START</code> к ~10.05, ~6 зарплат.</li>
+<li>Месяц отсрочки экономит <code>N − B − ΔU − St</code>, если это больше нуля, и даёт ещё одну зарплату накоплений.</li>
+<li>Даты удобные: 31.05 — понедельник, 01.06 — вторник.</li>
+<li><strong>Виза:</strong> договор для Насти у Бориса на 3 месяца, два сообщения в OAMP.</li>
+<li><strong>Когда выбирать:</strong> если в апреле накоплений не хватает на <code>START + R</code>.</li>
+</ul>
+</section>
+<section class="sec" id="10-источники-и-что-не-проверено">
+<h2>10. Источники и что не проверено</h2>
+<p>Всё проверено <strong>08.11.2026</strong>.</p>
+<p><strong>Законы (действующие редакции)</strong></p>
+<ul>
+<li>Občanský zákoník, zákon 89/2012 Sb. Редакция с 1.1.2026; с 1.1.2027 нормы об аренде не меняются. Источники: <a href="https://e-sbirka.gov.cz/sb/2012/89">e-Sbírka</a>, <a href="https://www.zakonyprolidi.cz/cs/2012-89">zakonyprolidi.cz</a>.
+<ul>
+<li>§ 22, § 561–562, § 570, § 573, § 605–607, § 1802, § 1987, § 2051.</li>
+<li>§ 2235, § 2239, § 2254, § 2257, § 2272–2274, § 2285–2288, § 2291–2295.</li>
+<li>Единственное изменение 2025–2026 годов — § 2239 odst. 2, zákon 176/2025 Sb.</li>
+</ul></li>
+<li>Zákon 176/2025 Sb.: o.s.ř. § 175a, rozkaz k vyklizení, с 1.1.2026. <a href="https://www.zakonyprolidi.cz/cs/2025-176">zakonyprolidi.cz</a></li>
+<li>NV 308/2015 Sb. в редакции NV 493/2025 Sb.: 1 500 Kč за ремонт, 150 Kč/м² в год, с 1.1.2026. Источники: <a href="https://www.zakonyprolidi.cz/cs/2015-308">zakonyprolidi.cz</a>, <a href="https://mmr.gov.cz/getmedia/98ca6d86-71ff-4a93-b9c4-32e9d7fa4067/NV-z-29-10-2025,-kterym-se-meni-narizeni-vlady-o-vynezeba-oihnl-bezna-udrzba-a-drobne-opravy-souvisejici-s-uzivanim-bytu.pdf.aspx?ext=.pdf">текст изменения на mmr.gov.cz</a>.</li>
+<li>Zákon 67/2013 Sb. (услуги): § 2, § 5, § 7, § 8, § 12, § 13. <a href="https://e-sbirka.gov.cz/sb/2013/67">e-Sbírka</a></li>
+<li>Zákon 326/1999 Sb. (пребывание иностранцев), редакция с 12.06.2026: § 31 odst. 1 písm. d) и odst. 5 (документ о жилье), § 98 (смена адреса), § 99–102 (ubytovatel), § 103, § 156. <a href="https://www.zakonyprolidi.cz/cs/1999-326">zakonyprolidi.cz</a></li>
+<li>MV ČR (OAMP): <a href="https://ipc.gov.cz/formulare-a-dokumenty/nalezitosti-dokumenty/doklad-o-ubytovani/">Doklad o zajištění ubytování</a>, <a href="https://ipc.gov.cz/povinnosti-cizincu/zmeny-u-obcanu-tretich-zemi/zmena-adresy-u-obcanu-tretich-zemi/">Změna adresy</a>, <a href="https://ipc.gov.cz/wp-content/uploads/2022/12/Potvrzeni_o_zajisteni_ubytovani-FO.doc">форма Potvrzení (FO)</a>.
+<ul>
+<li>Арендатор может подписать Potvrzení как «oprávněný uživatel» и приложить свой договор. Согласие собственника для поднайма больше не требуется.</li>
+<li>Оповещение о смене адреса бесплатное.</li>
+</ul></li>
+<li>Zákon 634/2004 Sb. (пошлины): заверение подписи — 50 Kč за подпись.</li>
+</ul>
+<p><strong>Разъяснения MMR</strong></p>
+<ul>
+<li><a href="https://mmr.gov.cz/cs/ministerstvo/bytova-politika/najemni-vztahy/skonceni-najmu">Skončení nájmu</a>, <a href="https://mmr.gov.cz/cs/ministerstvo/bytova-politika/najemni-vztahy/platby-spojene-s-najmem-bytu">Platby spojené s nájmem bytu</a>, <a href="https://mmr.gov.cz/cs/ministerstvo/bytova-politika/najemni-vztahy/reseni-castych-situaci-v-najemnim-bydleni">Řešení častých situací</a>, <a href="https://mmr.gov.cz/cs/ministerstvo/bytova-politika/najemni-vztahy/prava-a-povinnosti-najemce-a-pronajimatele">Práva a povinnosti</a>.</li>
+<li>Дат обновления на страницах нет.</li>
+<li>На странице «Platby» ещё указаны старые лимиты мелкого ремонта (1 000 Kč и 100 Kč/м²). Действующие — по NV 493/2025.</li>
+<li>Записи рабочей группы MMR по аренде: <a href="https://mmr.gov.cz/getmedia/2fc37472-5027-4e82-a669-1fc39bc3630f/Zapis-PS-Najmy-11-3-2025.pdf.aspx?ext=.pdf">11.3.2025</a>, <a href="https://www.mmr.gov.cz/getmedia/8608550b-337c-4473-a427-e4ca43d8f424/PS-najemni-vztahy_Zapis-23-5_1.pdf.aspx?ext=.pdf">23.5.2025</a>.</li>
+</ul>
+<p><strong>Суды и литература</strong></p>
+<ul>
+<li>MS Praha 16 Co 107/2022 (24.5.2022): покраска, срок возврата кауце, удержания, ставка процентов. <a href="https://msp.gov.cz/documents/14569/1865919/16Co_107_2022_10/16c22fae-d10d-4d08-bb58-8d8c26e1f3ae">Текст</a></li>
+<li>NS 26 Cdo 2018/2023 (20.8.2024): штрафы в аренде с 2020 года допустимы.</li>
+<li>NS 26 Cdo 1800/2025: обычный износ оценивается по обстоятельствам.</li>
+<li>NS 26 Cdo 1215/2003: постоянное совместное проживание.</li>
+<li>L. Brim, «Zpětné počítání lhůt a dob», Právník 2/2024: обратный счёт сроков. <a href="https://www.ilaw.cas.cz/upload/web/files/pravnik/issues/2024/2/1_Brim_101-119_2_2024.pdf">PDF</a></li>
+</ul>
+<p><strong>Изменения для иностранцев.</strong></p>
+<ul>
+<li>Новый закон о въезде и пребывании иностранцев подписан 4.11.2026, но вступает в силу только с 1.1.2029.</li>
+<li>Законопроект tisk 213 (второе чтение 22.10.2026) хочет сделать документ о жилье обязательным при оповещении о смене адреса. Без него новым адресом станет адрес ведомства. Дата вступления в силу не ясна (возможно, 2027) — <strong>перепроверить до марта 2027</strong>.</li>
+</ul>
+<p><strong>Статус законопроектов.</strong> Большая новелла аренды от MMR в парламент не вносилась. На 08.11.2026 в палате нет законопроектов, меняющих нормы об аренде (psp.cz, монитор zakonyprolidi). В октябре 2026 года министерство объявило консультативную коллегию по процентам на кауце и долгосрочной аренде — без проекта и без сроков.</p>
+<p><strong>Не проверено или не определено однозначно</strong></p>
+<ul>
+<li>Нет решения Верховного суда о пункте «сдать покрашенной», о «законной ставке» процентов на кауце, об удержании кауце до расчёта услуг, о партнёрше по § 2272.</li>
+<li>Нет решения о применении лимита 3× к конкретным штрафам после 2020 года.</li>
+<li>Применяется ли § 607 к обратному сроку — Верховный суд не решал. Академическое мнение — нет.</li>
+<li>Действительность и применимость каждого пункта ваших договоров оценена по тексту и закону, а не судом. Спорные места отмечены.</li>
+<li>Подписанный договор Насти и раздел IV договора Бориса не видел. Все выводы по ним условные.</li>
+<li>Тип визы Насти неизвестен. Выводы по визе верны и для долгосрочной визы, и для долгосрочного пребывания, но не для постоянного.</li>
+<li>Как OAMP отнесётся к пункту договора Бориса «других жильцов не будет», и подойдёт ли бронь Airbnb — не проверено.</li>
+</ul>
+</section>
+</div></main>
+<footer><div class="wrap">Данные и проверка закона — на 08.11.2026. Собрано 08.11.2026. Сроки и суммы перед действиями сверить с подписанными документами.</div></footer>
+<script>
+(function(){
+'use strict';
+var LS = {
+  get: function(k){ try { return window.localStorage.getItem(k); } catch(e){ return null; } },
+  set: function(k,v){ try { window.localStorage.setItem(k,v); } catch(e){} }
+};
+function $(id){ return document.getElementById(id); }
+function esc(s){ return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];}); }
+var DAY = 864e5;
+var today = new Date(); today.setHours(0,0,0,0);
+function D(s){ var p=s.split('-'); return new Date(+p[0], +p[1]-1, +p[2]); }
+function addDays(d,n){ var x=new Date(d); x.setDate(x.getDate()+n); return x; }
+function iso(d){ return d.getFullYear()+'-'+('0'+(d.getMonth()+1)).slice(-2)+'-'+('0'+d.getDate()).slice(-2); }
+function fd(d){ return ('0'+d.getDate()).slice(-2)+'.'+('0'+(d.getMonth()+1)).slice(-2)+'.'+d.getFullYear(); }
+function fds(d){ return ('0'+d.getDate()).slice(-2)+'.'+('0'+(d.getMonth()+1)).slice(-2); }
+var nf = new Intl.NumberFormat('ru-RU',{maximumFractionDigits:0});
+function kc(n){ return nf.format(Math.round(n)).replace('-','−')+' Kč'; }
+function sg(n){ n=Math.round(n); return (n>0?'+':n<0?'−':'±')+nf.format(Math.abs(n))+' Kč'; }
+function kt(n){ var a=Math.abs(n), s=n<0?'−':''; return s+(a>=1000?nf.format(Math.round(a/1000))+' тыс.':nf.format(Math.round(a))); }
+function svgEl(w,h,inner,label){ return '<svg viewBox="0 0 '+w+' '+h+'" width="'+w+'" height="'+h+'" role="img" aria-label="'+esc(label)+'">'+inner+'</svg>'; }
+
+/* ---------- theme ---------- */
+var themeBtn = $('theme');
+var themes = ['auto','light','dark'], tnames = {auto:'Тема: авто', light:'Тема: светлая', dark:'Тема: тёмная'};
+function applyTheme(t){
+  if(t==='auto') document.documentElement.removeAttribute('data-theme'); else document.documentElement.setAttribute('data-theme', t);
+  if(themeBtn) themeBtn.textContent = tnames[t];
+}
+var curTheme = LS.get('pz-theme') || 'auto'; applyTheme(curTheme);
+if(themeBtn) themeBtn.addEventListener('click', function(){ curTheme = themes[(themes.indexOf(curTheme)+1)%3]; LS.set('pz-theme', curTheme); applyTheme(curTheme); });
+
+/* ---------- collapsible sections + toc ---------- */
+var toc = $('toc');
+var secs = Array.prototype.slice.call(document.querySelectorAll('main section.sec'));
+secs.forEach(function(s){
+  var h = s.querySelector('h2'); if(!h) return;
+  var title = h.textContent;
+  var a = document.createElement('a'); a.href = '#'+s.id;
+  a.textContent = title.replace(/^(\d+)\.\s*/, '$1 · ').replace(/\s*\(.*\)\s*$/, '');
+  toc.insertBefore(a, themeBtn);
+  if(s.classList.contains('tool')) return;
+  var body = document.createElement('div'); body.className = 'sec-body';
+  while(h.nextSibling) body.appendChild(h.nextSibling);
+  s.appendChild(body);
+  var num = parseInt(title, 10), open = !(num >= 8);
+  h.innerHTML = '<button type="button" class="fold" aria-expanded="'+open+'"><span>'+esc(title)+'</span><span class="chev" aria-hidden="true">⌄</span></button>';
+  s.classList.toggle('closed', !open);
+  h.querySelector('button').addEventListener('click', function(){
+    var o = s.classList.toggle('closed'); this.setAttribute('aria-expanded', String(!o));
+  });
+  a.addEventListener('click', function(){ if(s.classList.contains('closed')){ s.classList.remove('closed'); h.querySelector('button').setAttribute('aria-expanded','true'); } });
+});
+if('IntersectionObserver' in window){
+  var links = toc.querySelectorAll('a');
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      if(!e.isIntersecting) return;
+      links.forEach(function(l){
+        var on = l.getAttribute('href')==='#'+e.target.id; l.classList.toggle('active', on);
+        if(on){ var r=l.getBoundingClientRect(), p=toc.getBoundingClientRect(); if(r.left<p.left||r.right>p.right) toc.scrollLeft += r.left - p.left - 16; }
+      });
+    });
+  }, {rootMargin:'-30% 0px -65% 0px'});
+  secs.forEach(function(s){ io.observe(s); });
+}
+
+/* ---------- checklists with progress ---------- */
+var saved = {}; try { saved = JSON.parse(LS.get('pz-checks')||'{}') || {}; } catch(e){ saved = {}; }
+var calSec = secs.filter(function(s){ return /^3/.test(s.id); })[0];
+var progWrap = null;
+if(calSec){
+  progWrap = document.createElement('div'); progWrap.className = 'progress';
+  var body = calSec.querySelector('.sec-body'); body.insertBefore(progWrap, body.firstChild);
+}
+function updateProgress(){
+  if(!calSec || !progWrap) return;
+  var all = calSec.querySelectorAll(':scope .sec-body > ul > li.task-list-item');
+  var done = calSec.querySelectorAll(':scope .sec-body > ul > li.task-list-item.done');
+  var pct = all.length ? Math.round(done.length*100/all.length) : 0;
+  progWrap.innerHTML = '<div class="pbar"><span style="width:'+pct+'%"></span></div><div class="ptext">Сделано '+done.length+' из '+all.length+'</div>';
+  calSec.querySelectorAll('.sec-body > h3').forEach(function(h3){
+    var ul = h3.nextElementSibling; while(ul && ul.tagName!=='UL' && ul.tagName!=='H3') ul = ul.nextElementSibling;
+    if(!ul || ul.tagName!=='UL') return;
+    var a = ul.querySelectorAll(':scope > li.task-list-item').length, d = ul.querySelectorAll(':scope > li.task-list-item.done').length;
+    var b = h3.querySelector('.cnt'); if(!b){ b = document.createElement('span'); b.className='cnt'; h3.appendChild(b); }
+    b.textContent = d+'/'+a; b.classList.toggle('full', a>0 && d===a);
+  });
+}
+document.querySelectorAll('li.task-list-item input[type=checkbox]').forEach(function(b){
+  var li = b.closest('li'); var key = (li.textContent||'').trim().slice(0,80);
+  b.disabled = false; b.checked = !!saved[key]; li.classList.toggle('done', b.checked);
+  b.addEventListener('change', function(){
+    if(b.checked) saved[key] = true; else delete saved[key];
+    li.classList.toggle('done', b.checked); LS.set('pz-checks', JSON.stringify(saved)); updateProgress();
+  });
+});
+updateProgress();
+
+/* ---------- deadlines ---------- */
+var DL = [
+  ['2026-11-30','Последний день доставки výpověď по § 2287, чтобы Борис закончил аренду 28.02 (не рекомендуется)'],
+  ['2026-12-31','Разведка у собственников и компании Насти: продление, досрочный выход, ранние ключи'],
+  ['2027-01-15','ТОЧКА РЕШЕНИЯ и отправка уведомления о непродлении обоим собственникам Бориса'],
+  ['2027-01-22','У Насти решён документ на март: продление или Potvrzení у Бориса'],
+  ['2027-01-29','Последний безопасный день ДОСТАВКИ уведомления Бориса'],
+  ['2027-02-25','Страховка Насти на апрель, если новая квартира не подписана'],
+  ['2027-02-26','Передача квартиры Насти (если 28.02 — воскресенье)'],
+  ['2027-03-12','Подписание новой квартиры для ключей 1.04'],
+  ['2027-03-25','Покраска у Бориса закончена (26–29.03 — Пасха)'],
+  ['2027-03-31','Передача квартиры Бориса (маршруты 1–3)']
+];
+var dl = $('deadlines');
+if(dl){
+  var shown = 0, html = '';
+  DL.forEach(function(x){
+    var d = D(x[0]), days = Math.round((d - today)/DAY);
+    if(days < -3 || shown >= 6) return; shown++;
+    var cls = days < 0 ? 'past' : (days <= 21 ? 'soon' : '');
+    var when = days < 0 ? fd(d)+' · прошло' : days === 0 ? 'сегодня' : fd(d)+' · через '+days+' дн.';
+    html += '<li class="'+cls+'"><span>'+esc(x[1])+'</span><span class="when">'+when+'</span></li>';
+  });
+  dl.innerHTML = html || '<li>Все сроки из плана уже прошли — пересчитайте календарь.</li>';
+}
+
+/* ---------- tool: state ---------- */
+var tool = $('tool'); if(!tool) return;
+var FIELDS = [
+  ['Сейчас, в месяц', [
+    ['B','B — Борис: аренда + услуги',20000,'из раздела IV договора'],
+    ['G','G — Настя: аренда + услуги',15500,'по тексту 12 000 + 3 500; проверить']]],
+  ['Новая квартира', [
+    ['A','A — аренда без услуг',24000,''],
+    ['s','s — авансы за услуги',4000,''],
+    ['k','Кауце, сколько месячных аренд',2,'закон: кауце + штрафы ≤ 3'],
+    ['c','Комиссия агента, сколько аренд',1,'0 — без агента'],
+    ['vat','НДС 21 % на комиссию',1,'chk'],
+    ['rez','Бронь, которая не зачитывается',0,''],
+    ['days','Дней раннего доступа к новой',7,'платно, пропорционально']]],
+  ['Переезд и сдача', [
+    ['dU','ΔU — доплата за услуги у Бориса, в месяц',1000,''],
+    ['St','St — склад, в месяц',2500,''],
+    ['M','M — один переезд',6000,''],
+    ['Mx','Mx — второй переезд вещей Насти',6000,''],
+    ['CB','C_B — сдача квартиры Бориса',12000,'уборка, покраска, мелкий ремонт'],
+    ['CG','C_G — сдача квартиры Насти',4000,'уборка, мелкий ремонт'],
+    ['E1a','E — за досрочный выход Бориса (1а)',0,''],
+    ['E4','E — за продление Бориса до 30.04 (4)',0,''],
+    ['E5','E — за продление до 31.05 (5)',0,'']]],
+  ['Ваши деньги', [
+    ['F0','F0 — свободные накопления сегодня',40000,'без запаса R'],
+    ['Z','Z — откладываете в месяц',25000,'после всех расходов, включая обе аренды'],
+    ['R','R — неприкосновенный запас',30000,''],
+    ['p','День зарплаты',10,'число месяца']]]
+];
+var DEF = {}; FIELDS.forEach(function(g){ g[1].forEach(function(f){ DEF[f[0]] = f[2]; }); });
+var vals = {}; try { vals = JSON.parse(LS.get('pz-calc')||'{}') || {}; } catch(e){ vals = {}; }
+Object.keys(DEF).forEach(function(k){ if(typeof vals[k] !== 'number' || !isFinite(vals[k])) vals[k] = DEF[k]; });
+
+var COND = [
+  ['live','Настя может жить у Бориса 1–3 месяца','место для неё и вещей, при необходимости склад'],
+  ['doc','Для Насти у Бориса будет документ, который примет OAMP','форма Potvrzení от Бориса с заверенной подписью + его договор'],
+  ['ext','Компания Насти продлит её договор','допсоглашение за месяц до окончания'],
+  ['bext','Собственники Бориса продлят до 30.04 / 31.05','допсоглашение без годового автопродления'],
+  ['early','Собственники Бориса отпустят его 28.02','письменное соглашение о прекращении']
+];
+var CNAME = {live:'Настя может жить у Бориса', doc:'документ для Насти у Бориса', ext:'продление договора Насти', bext:'продление у собственников Бориса', early:'досрочный выход Бориса'};
+var NEED = {'1':[], '1a':['early'], '2':['live','doc'], '3':['ext'], '4':['bext','live','doc'], '4b':['bext','ext'], '5':['bext','live','doc']};
+var st = {cond:{live:'?',doc:'?',ext:'?',bext:'?',early:'?'}, nEnd:'2027-02-28', sel:'2', risk:false};
+try { var s0 = JSON.parse(LS.get('pz-tool')||'null'); if(s0 && s0.cond){ for(var k in st.cond) if(s0.cond[k]) st.cond[k]=s0.cond[k]; if(s0.nEnd) st.nEnd=s0.nEnd; if(s0.sel) st.sel=s0.sel; } } catch(e){}
+function saveTool(){ LS.set('pz-tool', JSON.stringify({cond:st.cond, nEnd:st.nEnd, sel:st.sel})); }
+
+/* ---------- condition controls ---------- */
+var condEl = $('cond');
+function renderCond(){
+  var opts = [['yes','Да'],['?','Не знаю'],['no','Нет']];
+  var h = COND.map(function(c){
+    return '<div class="crow"><div class="clabel"><b>'+esc(c[1])+'</b><small>'+esc(c[2])+'</small></div><div class="seg" role="group" aria-label="'+esc(c[1])+'">'+
+      opts.map(function(o){ return '<button type="button" data-c="'+c[0]+'" data-v="'+o[0]+'" aria-pressed="'+(st.cond[c[0]]===o[0])+'" class="sv-'+(o[0]==='?'?'q':o[0])+'">'+o[1]+'</button>'; }).join('')+'</div></div>';
+  }).join('');
+  h += '<div class="crow"><div class="clabel"><b>Договор Насти кончается</b><small>уточнить по подписанному экземпляру</small></div><div class="seg" role="group" aria-label="Окончание договора Насти">'+
+    [['2027-02-28','28.02'],['2027-03-01','01.03']].map(function(o){ return '<button type="button" data-n="'+o[0]+'" aria-pressed="'+(st.nEnd===o[0])+'">'+o[1]+'</button>'; }).join('')+'</div></div>';
+  condEl.innerHTML = h;
+}
+condEl.addEventListener('click', function(e){
+  var b = e.target.closest('button'); if(!b) return;
+  if(b.dataset.c){ st.cond[b.dataset.c] = b.dataset.v; }
+  if(b.dataset.n){ st.nEnd = b.dataset.n; }
+  saveTool(); renderCond(); calc();
+});
+
+/* ---------- inputs ---------- */
+var form = $('calc-form');
+form.innerHTML = FIELDS.map(function(g){
+  return '<fieldset><legend>'+esc(g[0])+'</legend>'+g[1].map(function(f){
+    if(f[3]==='chk') return '<label class="chk"><input type="checkbox" data-k="'+f[0]+'"> '+esc(f[1])+'</label>';
+    return '<label>'+esc(f[1])+(f[3]?'<small>'+esc(f[3])+'</small>':'')+
+      '<input type="number" inputmode="decimal" min="0" step="'+(f[0]==='k'||f[0]==='c'?'0.5':f[0]==='p'||f[0]==='days'?'1':'500')+'" data-k="'+f[0]+'"></label>';
+  }).join('')+'</fieldset>';
+}).join('');
+var inputs = form.querySelectorAll('input');
+function fill(){ inputs.forEach(function(i){ var k=i.getAttribute('data-k'); if(i.type==='checkbox') i.checked = !!vals[k]; else i.value = vals[k]; }); }
+fill();
+inputs.forEach(function(i){
+  i.addEventListener('input', function(){
+    var k=i.getAttribute('data-k');
+    vals[k] = i.type==='checkbox' ? (i.checked?1:0) : (i.value===''?0:Math.max(0, parseFloat(i.value)||0));
+    LS.set('pz-calc', JSON.stringify(vals)); calc();
+  });
+});
+$('calc-reset').addEventListener('click', function(){ Object.keys(DEF).forEach(function(k){ vals[k]=DEF[k]; }); LS.set('pz-calc', JSON.stringify(vals)); fill(); calc(); });
+$('risk').addEventListener('change', function(){ st.risk = this.checked; renderDetail(); });
+
+/* ---------- routes ---------- */
+function shiftMonth(s, n){ var d=D(s); return iso(new Date(d.getFullYear(), d.getMonth()+n, d.getDate())); }
+function routes(v){
+  var N = v.A + v.s, X = Math.round(N*v.days/30), M = v.M, Mx = v.Mx, B = v.B, G = v.G, h = v.dU + v.St;
+  var atB = G - h, first = B + G, nw = B + G - N;
+  var nE = st.nEnd, nE1 = iso(addDays(D(nE),1));
+  return [
+    {id:'1', short:'1', name:'Новая к 1.03, Борис платит март', cost:B+4*N+2*M,
+     delta:{3:G,4:nw,5:nw,6:nw},
+     ev:[['2027-02-12','S','Подписание новой: старт'],['2027-02-26',v.CG+M,'Сдача квартиры Насти и переезд'],['2027-03-31',v.CB+M,'Сдача квартиры Бориса и переезд']],
+     tl:{b:[['2027-03-31','old']], n:[[nE,'old']], sub:null, nw:{early:null, start:'2027-03-01'}},
+     fb:'продление договора Насти на март или Potvrzení у Бориса — решить до ~22.01',
+     steps:['До 15.01 — уведомление о непродлении обоим собственникам Бориса','До ~22.01 — страховка Насти на март: продление её договора или Potvrzení у Бориса','~1–10.02 — бронь, до ~12.02 — подписание и старт','Договор новой квартиры начинается не позже дня после окончания договора Насти','26.02 / 01.03 — сдача квартиры Насти; март Борис платит вдвойне','До 31.03 — спокойная сдача квартиры Бориса; одно сообщение в OAMP']},
+    {id:'1a', short:'1а', name:'Новая к 1.03, Борис выходит 28.02 по соглашению', cost:4*N+2*M+v.E1a+X,
+     delta:{3:first,4:nw,5:nw,6:nw},
+     ev:[['2027-01-20',v.E1a,'Плата за досрочный выход Бориса'],['2027-02-12','S','Подписание новой: старт'],['2027-02-22',X,'Ранние ключи'],['2027-02-26',v.CG+M,'Сдача квартиры Насти и переезд'],['2027-02-27',v.CB+M,'Сдача квартиры Бориса и переезд']],
+     tl:{b:[['2027-02-28','old']], n:[[nE,'old']], sub:null, nw:{early:'2027-02-22', start:'2027-03-01'}},
+     fb:'продление договора Насти на март или Potvrzení у Бориса — решить до ~22.01',
+     steps:['Письменное соглашение с обоими собственниками Бориса об окончании 28.02','До ~12.02 — подписание новой, ранние ключи ~22.02','26–27.02 — обе сдачи (28.02 — воскресенье)','Одно сообщение в OAMP после переезда']},
+    {id:'2', short:'2', name:'Настя у Бориса в марте, новая к 1.04', cost:B+3*N+h+2*M+Mx+X,
+     delta:{3:atB,4:first,5:nw,6:nw},
+     ev:[['2027-02-26',v.CG+M,'Сдача квартиры Насти, переезд к Борису'],['2027-03-12','S','Подписание новой: старт'],['2027-03-25',X,'Ранние ключи'],['2027-03-31',v.CB+M+Mx,'Сдача квартиры Бориса, переезд, второй переезд вещей Насти']],
+     tl:{b:[['2027-03-31','old']], n:[[nE,'old']], sub:[nE1,'2027-03-31'], nw:{early:'2027-03-25', start:'2027-04-01'}},
+     fb:'продление договора Бориса и новое Potvrzení для Насти на апрель — решить до ~25.02',
+     steps:['До 15.01 — уведомление о непродлении обоим собственникам Бориса','До ~22.01 — решить документ для Насти: форма Potvrzení от Бориса (заверить подпись, 50 Kč) + копия его договора','26.02–01.03 — переезд Насти; уведомить собственников Бориса в течение недели','До ~25.02 — страховка на апрель: продление у Бориса и новое Potvrzení для Насти','До ~12.03 — подписание новой, ключи ~25.03; до 25.03 — покраска','До ~30.03 — сообщение в OAMP о переезде к Борису, после 1.04 — о новой квартире']},
+    {id:'3', short:'3', name:'Договор Насти до 31.03, оба к 1.04', cost:B+G+3*N+2*M+X,
+     delta:{3:0,4:first,5:nw,6:nw},
+     ev:[['2027-03-12','S','Подписание новой: старт'],['2027-03-25',X,'Ранние ключи'],['2027-03-30',v.CG+M,'Сдача квартиры Насти и переезд'],['2027-03-31',v.CB+M,'Сдача квартиры Бориса и переезд']],
+     tl:{b:[['2027-03-31','old']], n:[[nE,'old'],['2027-03-31','ext']], sub:null, nw:{early:'2027-03-25', start:'2027-04-01'}},
+     fb:'ещё одно продление договора Насти — согласовать до ~28.02',
+     steps:['До ~25.01 — допсоглашение о продлении договора Насти до 31.03','До 15.01 — уведомление о непродлении обоим собственникам Бориса','До ~25.02 — апрель решён: новая квартира подписана или договор Насти продлён ещё','До ~12.03 — подписание новой, ключи ~25.03','30.03 — сдача Насти, 31.03 — сдача Бориса; одно сообщение в OAMP']},
+    {id:'4', short:'4', name:'Договор Бориса до 30.04, Настя у него', cost:2*B+2*N+2*h+2*M+Mx+X+v.E4,
+     delta:{3:atB,4:atB,5:first,6:nw},
+     ev:[['2027-01-20',v.E4,'Плата за продление у Бориса'],['2027-02-26',v.CG+M,'Сдача квартиры Насти, переезд к Борису'],['2027-04-12','S','Подписание новой: старт'],['2027-04-26',X,'Ранние ключи'],['2027-04-30',v.CB+M+Mx,'Сдача квартиры Бориса, переезды']],
+     tl:{b:[['2027-03-31','old'],['2027-04-30','ext']], n:[[nE,'old']], sub:[nE1,'2027-04-30'], nw:{early:'2027-04-26', start:'2027-05-01'}},
+     fb:'ещё месяц продления у собственников Бориса и новое Potvrzení для Насти — решить до ~31.03',
+     steps:['Допсоглашение обоих собственников Бориса: до 30.04, без автопродления','Potvrzení для Насти у Бориса на март–апрель + копия допсоглашения Бориса','До ~12.04 — подписание новой; ключи до 30.04 (1.05 — праздник)','Два сообщения в OAMP']},
+    {id:'4b', short:'4б', name:'Договоры Бориса и Насти до 30.04', cost:2*B+2*G+2*N+2*M+X+v.E4,
+     delta:{3:0,4:0,5:first,6:nw},
+     ev:[['2027-01-20',v.E4,'Плата за продление у Бориса'],['2027-04-12','S','Подписание новой: старт'],['2027-04-26',X,'Ранние ключи'],['2027-04-29',v.CG+M,'Сдача квартиры Насти и переезд'],['2027-04-30',v.CB+M,'Сдача квартиры Бориса и переезд']],
+     tl:{b:[['2027-03-31','old'],['2027-04-30','ext']], n:[[nE,'old'],['2027-04-30','ext']], sub:null, nw:{early:'2027-04-26', start:'2027-05-01'}},
+     fb:'ещё одно продление у обоих — решить до ~31.03',
+     steps:['Допсоглашение собственников Бориса до 30.04','Продление договора Насти до 30.04 — до ~25.01','До ~12.04 — подписание новой','Одно сообщение в OAMP']},
+    {id:'5', short:'5', name:'Договор Бориса до 31.05, новая к 1.06', cost:3*B+N+3*h+2*M+Mx+X+v.E5,
+     delta:{3:atB,4:atB,5:atB,6:first},
+     ev:[['2027-01-20',v.E5,'Плата за продление у Бориса'],['2027-02-26',v.CG+M,'Сдача квартиры Насти, переезд к Борису'],['2027-05-12','S','Подписание новой: старт'],['2027-05-26',X,'Ранние ключи'],['2027-05-31',v.CB+M+Mx,'Сдача квартиры Бориса, переезды']],
+     tl:{b:[['2027-03-31','old'],['2027-05-31','ext']], n:[[nE,'old']], sub:[nE1,'2027-05-31'], nw:{early:'2027-05-26', start:'2027-06-01'}},
+     fb:'ещё месяц продления у собственников Бориса и новое Potvrzení для Насти — решить до ~30.04',
+     steps:['Допсоглашение собственников Бориса до 31.05','Potvrzení для Насти у Бориса на 3 месяца + копия допсоглашения Бориса','До ~12.05 — подписание новой; 31.05 — сдача Бориса','Два сообщения в OAMP']}
+  ];
+}
+
+function simulate(r, v, START){
+  var evs = [], end = new Date(2027,5,30), y = today.getFullYear(), m = today.getMonth();
+  var p = Math.min(Math.max(Math.round(v.p)||1,1),31);
+  for(var g=0; g<40; g++){
+    var dim = new Date(y, m+1, 0).getDate(), d = new Date(y, m, Math.min(p, dim));
+    if(d > end) break;
+    if(d >= today){ var dl = (y===2027 && r.delta[m+1]) || 0; evs.push({t:d, z:1, delta:dl, amt:0, label: dl ? 'Зарплата и изменение расходов '+sg(dl) : 'Зарплата: +Z'}); }
+    m++; if(m>11){ m=0; y++; }
+  }
+  r.ev.forEach(function(e){
+    var d = D(e[0]), amt = e[1]==='S' ? START : e[1];
+    if(d >= today && amt) evs.push({t:d, z:0, delta:0, amt:amt, label:e[2], start:e[1]==='S'});
+  });
+  evs.sort(function(a,b){ return (a.t-b.t) || (a.z-b.z); });
+  var n=0, Dl=0, O=0, minF=v.F0, minAt=null, zreq=0, infeasible=false, startAt=null, pts=[{t:today, F:v.F0, label:'Сегодня', kind:'now'}];
+  evs.forEach(function(e){
+    if(e.z){ n++; Dl += e.delta; } else { O += e.amt; if(e.start) startAt = e.t; }
+    var F = v.F0 + n*v.Z + Dl - O;
+    pts.push({t:e.t, F:F, label:e.label, kind:e.z?'pay':'spend', amt:e.z ? v.Z+e.delta : -e.amt});
+    if(F < minF){ minF = F; minAt = e.t; }
+    var need = v.R - v.F0 - Dl + O;
+    if(need > 0){ if(n === 0) infeasible = true; else zreq = Math.max(zreq, need/n); }
+  });
+  if(v.R > v.F0 && evs.length===0) infeasible = true;
+  return {minF:minF, minAt:minAt, zreq:zreq, infeasible:infeasible, startAt:startAt, empty:!evs.length, pts:pts, ok: !infeasible && v.Z >= zreq - 0.5};
+}
+
+function status(r){
+  var need = NEED[r.id], s = 'ok', why = [];
+  need.forEach(function(c){
+    var v = st.cond[c];
+    if(v==='no'){ s = 'no'; why.push('нет: '+CNAME[c]); }
+    else if(v==='?'){ if(s==='ok') s = 'q'; why.push('не известно: '+CNAME[c]); }
+  });
+  return {s:s, why:why};
+}
+
+var R = [], START = 0, N = 0;
+function calc(){
+  var v = vals; N = v.A + v.s;
+  var comm = v.c * v.A * (v.vat ? 1.21 : 1);
+  START = v.rez + v.k*v.A + comm + N;
+  var X = Math.round(N*v.days/30), after = v.Z + v.B + v.G - N;
+  R = routes(v);
+  R.forEach(function(r){ r.sim = simulate(r, v, START); r.st = status(r); });
+  $('sum-line').textContent = 'B '+kt(v.B)+' · G '+kt(v.G)+' · N '+kt(N)+' · F0 '+kt(v.F0)+' · Z '+kt(v.Z)+' · R '+kt(v.R);
+  $('calc-kpis').innerHTML =
+    kpi(kc(START), 'Старт: кауце '+kc(v.k*v.A)+' + комиссия '+kc(comm)+' + первый месяц '+kc(N)+(v.rez?' + бронь '+kc(v.rez):'')) +
+    kpi(kc(N), 'N — новая квартира в месяц (A + s)') +
+    kpi(kc(X), 'X — ранние ключи, '+v.days+' дн.') +
+    kpi('<span class="'+(after>=0?'ok':'ko')+'">'+sg(after)+'</span>', 'Остаток в месяц после переезда: Z + B + G − N'+(after<0?'. Новая квартира дороже, чем вы сейчас тратите и откладываете вместе':''));
+  // recommendation
+  var cand = R.filter(function(r){ return r.st.s!=='no'; });
+  function cheapest(list){ return list.slice().sort(function(a,b){ return a.cost-b.cost; })[0]; }
+  function unk(r){ return NEED[r.id].filter(function(c){ return st.cond[c]==='?'; }).length; }
+  var best = cheapest(cand.filter(function(r){ return r.st.s==='ok' && r.sim.ok; })), level = 'ok';
+  if(!best){ best = cand.filter(function(r){ return r.sim.ok; }).sort(function(a,b){ return (unk(a)-unk(b)) || (a.cost-b.cost); })[0]; level = 'q'; }
+  var alt = best ? cheapest(cand.filter(function(r){ return r.sim.ok && r.cost < best.cost; })) : null;
+  if(!best){ best = cheapest(cand); level = 'money'; }
+  R.forEach(function(r){ r.best = best && r.id===best.id; });
+  var rec = $('rec');
+  if(!best){ rec.className='rec bad'; rec.innerHTML = '<b>✕ Ни один маршрут не подходит</b> при отмеченных условиях. Снимите «Нет» хотя бы с одного условия или проверьте числа.'; }
+  else {
+    rec.className = 'rec '+(level==='ok'?'good':level==='q'?'warn':'bad');
+    var head = level==='ok' ? '✓ Рекомендуем маршрут '+best.short : level==='q' ? '? Предварительно — маршрут '+best.short : '! Маршрут '+best.short+' дешевле других, но денег не хватает';
+    var tail = level==='ok' ? 'Все нужные условия подтверждены, денег хватает.' : level==='q' ? 'Из маршрутов, на которые хватает денег, он зависит от меньшего числа неподтверждённых условий'+(best.st.why.length?': '+best.st.why.map(function(w){return w.replace(/^не известно: /,'');}).join(', '):'')+'.' : 'Нужно откладывать '+(best.sim.infeasible?'больше, чем позволяет F0':kc(Math.ceil(best.sim.zreq/100)*100)+' в месяц')+', сейчас '+kc(v.Z)+'. Посмотрите маршруты 4–5 или снизьте старт.';
+    rec.innerHTML = '<b>'+esc(head)+'</b>: '+esc(best.name)+'. '+esc(tail)+' <button type="button" class="link" data-sel="'+best.id+'">Показать</button>'+
+      (alt ? '<br><small>Дешевле, если подтвердится: маршрут '+alt.short+' ('+sg(alt.cost-best.cost)+' за март–июнь). <button type="button" class="link" data-sel="'+alt.id+'">Посмотреть</button></small>' : '');
+  }
+  renderCards(); renderTable(); renderBE(v); renderCost(); renderDetail();
+}
+function kpi(v,l){ return '<div class="kpi"><div class="v">'+v+'</div><div class="l">'+esc(l)+'</div></div>'; }
+
+/* ---------- cards ---------- */
+var STL = {ok:['возможен','✓'], q:['под вопросом','?'], no:['исключён','✕']};
+function renderCards(){
+  var base = R[2].cost;
+  $('cards').innerHTML = R.map(function(r){
+    var s = r.st.s, cls = 'card s-'+s+(r.id===st.sel?' sel':'')+(r.best?' best':'');
+    return '<button type="button" role="listitem" class="'+cls+'" data-sel="'+r.id+'" aria-pressed="'+(r.id===st.sel)+'">'+
+      '<span class="cnum">'+r.short+'</span>'+(r.best?'<span class="badge">рекомендуем</span>':'')+
+      '<span class="cname">'+esc(r.name)+'</span>'+
+      '<span class="chip c-'+s+'">'+STL[s][1]+' '+STL[s][0]+'</span>'+
+      '<span class="cmoney"><b>'+(r.id==='2'?'база сравнения':sg(r.cost-base))+'</b><small>'+(r.id==='2'?'':'против маршрута 2 · ')+'мар–июн '+kt(r.cost)+'</small></span>'+
+      '<span class="cfund '+(r.sim.ok?'ok':'ko')+'">'+(r.sim.empty?'—':r.sim.ok?'✓ денег хватает':'✕ не хватает денег')+'</span>'+
+      (r.st.why.length?'<span class="cwhy">'+esc(r.st.why.join('; '))+'</span>':'')+
+    '</button>';
+  }).join('');
+}
+tool.addEventListener('click', function(e){
+  var b = e.target.closest('[data-sel]'); if(!b) return;
+  st.sel = b.getAttribute('data-sel'); saveTool(); renderCards(); renderCost(); renderDetail();
+  if(b.classList.contains('link')) $('detail').scrollIntoView({behavior:'smooth', block:'start'});
+});
+
+/* ---------- detail: timeline ---------- */
+var T0 = D('2026-11-01'), T1 = D('2027-07-01');
+function segsFor(r, risk){
+  var tl = r.tl, out = {b:[], n:[], sub:[], nw:[]};
+  var vStart = T0;
+  var prev = vStart;
+  tl.b.forEach(function(x){ var e = D(x[0]); out.b.push({a:prev, b:e, kind:x[1]}); prev = addDays(e,1); });
+  prev = vStart;
+  tl.n.forEach(function(x){ var e = D(x[0]); out.n.push({a:prev, b:e, kind:x[1]}); prev = addDays(e,1); });
+  if(tl.sub) out.sub.push({a:D(tl.sub[0]), b:D(tl.sub[1]), kind:'sub'});
+  var start = tl.nw.start, early = tl.nw.early;
+  if(risk){ start = shiftMonth(start,1); if(early) early = shiftMonth(early,1); }
+  if(early) out.nw.push({a:D(early), b:addDays(D(start),-1), kind:'early'});
+  out.nw.push({a:D(start), b:addDays(T1,-1), kind:'new'});
+  return out;
+}
+function coverage(sg){
+  var from = today > T0 ? today : T0, to = addDays(T1,-1), all = sg.n.concat(sg.sub, sg.nw), res = [], cur = null;
+  for(var d = new Date(from); d <= to; d = addDays(d,1)){
+    var c = all.some(function(s){ return d >= s.a && d <= s.b; });
+    if(!cur || cur.c !== c){ cur = {a:new Date(d), b:new Date(d), c:c}; res.push(cur); } else cur.b = new Date(d);
+  }
+  return res;
+}
+function renderDetail(){
+  var r = R.filter(function(x){ return x.id===st.sel; })[0] || R[2];
+  $('sel-title').innerHTML = 'Маршрут '+r.short+': '+esc(r.name)+' <span class="chip c-'+r.st.s+'">'+STL[r.st.s][1]+' '+STL[r.st.s][0]+'</span>';
+  $('risk').checked = st.risk;
+  var sgm = segsFor(r, st.risk), cov = coverage(sgm);
+  $('tl-legend').innerHTML = [
+    ['sw s1','Договор Бориса'],['sw s2','Договор Насти'],['sw s4','Настя у Бориса по Potvrzení'],['sw s3','Новая квартира'],['sw hatch','продление / ранние ключи'],['sw good','у Насти есть договор'],['sw bad','нет договора']
+  ].map(function(x){ return '<span><i class="'+x[0]+'"></i>'+x[1]+'</span>'; }).join('');
+  var gaps = cov.filter(function(c){ return !c.c; });
+  var vc = $('visa-check');
+  if(!gaps.length){ vc.className='visa good'; vc.innerHTML = '<b>✓ У Насти договор есть каждый день</b>, если все договоры подписаны на эти даты. '+(st.risk?'':'Включите «что если», чтобы увидеть, какая страховка нужна.'); }
+  else { vc.className='visa bad'; vc.innerHTML = '<b>✕ Нет договора у Насти: '+gaps.map(function(g){ return fd(g.a)+' – '+fd(g.b); }).join(', ')+'.</b> Для визы так нельзя. Страховка: '+esc(r.fb)+'.'; }
+  var ms = [['2027-01-15','Уведомление Бориса о непродлении отправлено'],['2027-01-22','У Насти решён договор на март']];
+  r.ev.forEach(function(e){ if(e[1]==='S') ms.push([e[0], e[2]]); });
+  if(r.id==='2'||r.id==='3') ms.push(['2027-02-25','Страховка Насти на апрель, если новая не подписана']);
+  ms.sort(function(a,b){ return D(a[0])-D(b[0]); });
+  $('milestones').innerHTML = ms.map(function(m,i){ return '<li><span class="mnum">'+(i+1)+'</span><b>'+fd(D(m[0]))+'</b> — '+esc(m[1])+'</li>'; }).join('');
+  r._ms = ms;
+  drawTimeline(r, sgm, cov);
+  drawFund(r);
+  $('sel-steps').innerHTML = r.steps.map(function(s){ return '<li>'+esc(s)+'</li>'; }).join('');
+}
+function drawTimeline(r, sgm, cov){
+  var el = $('timeline'), W = Math.max(300, Math.floor(el.clientWidth || 600));
+  var lw = W < 560 ? 96 : 190, x0 = lw, x1 = W - 8, top = 26, rh = 26, gap = 10;
+  function X(d){ return x0 + (x1-x0) * (d - T0)/(T1 - T0); }
+  var rows = [
+    {l:'Борис: свой договор', segs:sgm.b, c:'s1'},
+    {l:'Настя: свой договор', segs:sgm.n, c:'s2'},
+    {l:'Настя: у Бориса (Potvrzení)', segs:sgm.sub, c:'s4'},
+    {l:'Новая квартира', segs:sgm.nw, c:'s3'},
+    {l:'Настя: договор есть?', cov:true}
+  ];
+  var H = top + rows.length*(rh+gap) + 52, narrow = W < 560;
+  var g = '<defs><pattern id="ph" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="6" height="6" fill="transparent"/><line x1="0" y1="0" x2="0" y2="6" class="hl"/></pattern></defs>';
+  // month grid
+  for(var mo = new Date(T0); mo <= T1; mo = new Date(mo.getFullYear(), mo.getMonth()+1, 1)){
+    var x = X(mo);
+    g += '<line x1="'+x+'" x2="'+x+'" y1="'+(top-6)+'" y2="'+(H-26)+'" class="grid"/>';
+    if(mo < T1){
+      var nm = (narrow ? ['Я','Ф','М','А','М','И','И','А','С','О','Н','Д'] : ['янв','фев','мар','апр','май','июн','июл','авг','сен','окт','ноя','дек'])[mo.getMonth()];
+      var nx = X(new Date(mo.getFullYear(), mo.getMonth()+1, 1));
+      g += '<text x="'+((x+nx)/2)+'" y="14" class="ax" text-anchor="middle">'+nm+(mo.getMonth()===0&&!narrow?' 27':'')+'</text>';
+    }
+  }
+  rows.forEach(function(row, i){
+    var y = top + i*(rh+gap);
+    g += '<text x="'+(x0-8)+'" y="'+(y+rh/2+4)+'" class="rl" text-anchor="end">'+esc(W<560?row.l.replace('Настя: ','Н: ').replace('Борис: ','Б: ').replace('свой договор','свой').replace('у Бориса (Potvrzení)','у Бориса').replace('договор есть?','договор?').replace('Новая квартира','новая'):row.l)+'</text>';
+    if(row.cov){
+      cov.forEach(function(c){
+        var xa = X(c.a), xb = X(addDays(c.b,1)), w = Math.max(2, xb-xa-2);
+        g += '<rect x="'+xa+'" y="'+y+'" width="'+w+'" height="'+rh+'" rx="4" class="'+(c.c?'good':'bad')+'"><title>'+(c.c?'Договор есть':'Нет договора')+': '+fd(c.a)+' – '+fd(c.b)+'</title></rect>';
+        var t = c.c ? '✓ договор есть' : '✕ нет договора';
+        if(w > t.length*6.4+10) g += '<text x="'+(xa+8)+'" y="'+(y+rh/2+4)+'" class="in">'+t+'</text>';
+        else if(!c.c && w > 14) g += '<text x="'+(xa+w/2)+'" y="'+(y+rh/2+4)+'" class="in" text-anchor="middle">✕</text>';
+      });
+      return;
+    }
+    if(!row.segs.length) g += '<text x="'+(x0+6)+'" y="'+(y+rh/2+4)+'" class="none">не нужен в этом маршруте</text>';
+    row.segs.forEach(function(sg){
+      var xa = Math.max(x0, X(sg.a)), xb = X(addDays(sg.b,1)), w = Math.max(2, xb - xa - 2);
+      var lab = sg.kind==='ext' ? 'продление до '+fds(sg.b) : sg.kind==='early' ? 'ранние ключи' : sg.kind==='sub' ? 'Potvrzení '+fds(sg.a)+'–'+fds(sg.b) : sg.kind==='new' ? 'с '+fds(sg.a) : 'до '+fds(sg.b);
+      g += '<rect x="'+xa+'" y="'+y+'" width="'+w+'" height="'+rh+'" rx="4" class="'+row.c+'"><title>'+esc(row.l+': '+lab)+'</title></rect>';
+      if(sg.kind==='ext'||sg.kind==='early') g += '<rect x="'+xa+'" y="'+y+'" width="'+w+'" height="'+rh+'" rx="4" fill="url(#ph)" pointer-events="none"/>';
+      if(w > lab.length*6.3+12) g += '<text x="'+(xa+8)+'" y="'+(y+rh/2+4)+'" class="in'+(row.c==='s4'?' dark':'')+'">'+esc(lab)+'</text>';
+    });
+  });
+  // today + milestones
+  var ty = H - 46;
+  if(today > T0 && today < T1){ var tx = X(today); g += '<line x1="'+tx+'" x2="'+tx+'" y1="'+(top-6)+'" y2="'+(H-4)+'" class="today"/><text x="'+(tx-4)+'" y="'+(H-4)+'" text-anchor="end" class="ax tday">сегодня</text>'; }
+  var lastX = -99, lvl = 0;
+  (r._ms||[]).forEach(function(m,i){
+    var x = X(D(m[0]));
+    lvl = (x - lastX < 18) ? (lvl ? 0 : 1) : 0; lastX = x;
+    var cy = ty + 6 + lvl*20;
+    g += '<g><line x1="'+x+'" x2="'+x+'" y1="'+(top-6)+'" y2="'+(cy-8)+'" class="msl"/><circle cx="'+x+'" cy="'+cy+'" r="8" class="msc"/><text x="'+x+'" y="'+(cy+4)+'" text-anchor="middle" class="msn">'+(i+1)+'</text><title>'+esc(fd(D(m[0]))+' — '+m[1])+'</title></g>';
+  });
+  el.innerHTML = svgEl(W, H, g, 'Шкала договоров по маршруту '+r.short);
+}
+
+/* ---------- detail: fund chart ---------- */
+var tip = document.createElement('div'); tip.className = 'tip'; tip.hidden = true; document.body.appendChild(tip);
+function drawFund(r){
+  var el = $('fundchart'), pts = r.sim.pts, v = vals;
+  var note = $('fund-note');
+  if(r.sim.empty){ el.innerHTML=''; note.textContent = 'Все даты маршрута уже прошли.'; return; }
+  var W = Math.max(300, Math.floor(el.clientWidth || 600)), H = 240, ml = 58, mr = 12, mt = 14, mb = 26;
+  var ta = pts[0].t, tb = D('2027-06-30');
+  var lo = Math.min(0, v.R, Math.min.apply(null, pts.map(function(p){return p.F;})));
+  var hi = Math.max(v.R, Math.max.apply(null, pts.map(function(p){return p.F;}))) * 1.08 + 1;
+  function X(d){ return ml + (W-ml-mr) * (d - ta)/(tb - ta); }
+  function Y(f){ return mt + (H-mt-mb) * (1 - (f-lo)/(hi-lo)); }
+  var step = Math.pow(10, Math.floor(Math.log10((hi-lo)/4))); var cand = [1,2,2.5,5,10]; var tick = step;
+  for(var i=0;i<cand.length;i++){ if((hi-lo)/(step*cand[i]) <= 5){ tick = step*cand[i]; break; } }
+  var g = '';
+  for(var t = Math.ceil(lo/tick)*tick; t <= hi; t += tick){ var y = Y(t); g += '<line x1="'+ml+'" x2="'+(W-mr)+'" y1="'+y+'" y2="'+y+'" class="'+(t===0?'base':'grid')+'"/><text x="'+(ml-6)+'" y="'+(y+4)+'" text-anchor="end" class="ax">'+kt(t)+'</text>'; }
+  for(var mo = new Date(ta.getFullYear(), ta.getMonth()+1, 1); mo <= tb; mo = new Date(mo.getFullYear(), mo.getMonth()+1, 1)){
+    var nm = ['янв','фев','мар','апр','май','июн','июл','авг','сен','окт','ноя','дек'][mo.getMonth()];
+    g += '<text x="'+X(mo)+'" y="'+(H-8)+'" text-anchor="middle" class="ax">'+nm+'</text>';
+  }
+  var yr = Y(v.R);
+  g += '<line x1="'+ml+'" x2="'+(W-mr)+'" y1="'+yr+'" y2="'+yr+'" class="rline"/><text x="'+(W-mr-4)+'" y="'+(yr-5)+'" text-anchor="end" class="ax">запас R '+kt(v.R)+'</text>';
+  var d = 'M'+X(pts[0].t)+','+Y(pts[0].F);
+  for(var j=1;j<pts.length;j++){ d += 'H'+X(pts[j].t)+'V'+Y(pts[j].F); }
+  d += 'H'+X(tb);
+  g += '<path d="'+d+'" class="fline"/>';
+  pts.forEach(function(p){
+    if(p.kind==='spend'){ g += '<circle cx="'+X(p.t)+'" cy="'+Y(p.F)+'" r="4.5" class="'+(p.F < v.R ? 'mk bad' : 'mk')+'"/>'; }
+  });
+  var low = pts.filter(function(p){ return p.F < v.R; });
+  g += '<line class="xh" x1="0" x2="0" y1="'+mt+'" y2="'+(H-mb)+'" visibility="hidden"/><circle class="xhd" r="5" cx="0" cy="0" visibility="hidden"/>';
+  g += '<rect class="hit" x="'+ml+'" y="'+mt+'" width="'+(W-ml-mr)+'" height="'+(H-mt-mb)+'" fill="transparent"/>';
+  el.innerHTML = svgEl(W, H, g, 'Фонд по датам, маршрут '+r.short);
+  note.innerHTML = low.length ? '<span class="ko">✕ Ниже запаса R: '+low.map(function(p){return fd(p.t);}).slice(0,4).join(', ')+'.</span> Чтобы этого не было, нужно откладывать '+(r.sim.infeasible?'больше, чем позволяют текущие накопления':kc(Math.ceil(r.sim.zreq/100)*100)+' в месяц')+'.' :
+    '<span class="ok">✓ Фонд не опускается ниже запаса R.</span> Минимум '+kc(r.sim.minF)+(r.sim.minAt?' — '+fd(r.sim.minAt):'')+'. Возвраты старых кауце сюда не входят.';
+  var svg = el.querySelector('svg'), hit = svg.querySelector('.hit'), xh = svg.querySelector('.xh'), dot = svg.querySelector('.xhd');
+  function move(ev){
+    var bb = svg.getBoundingClientRect(), sx = (ev.clientX - bb.left) * (W / bb.width);
+    var best = pts[0], bd = Infinity;
+    pts.forEach(function(p){ var dd = Math.abs(X(p.t)-sx); if(dd < bd){ bd = dd; best = p; } });
+    var px = X(best.t), py = Y(best.F);
+    xh.setAttribute('x1',px); xh.setAttribute('x2',px); xh.setAttribute('visibility','visible');
+    dot.setAttribute('cx',px); dot.setAttribute('cy',py); dot.setAttribute('visibility','visible');
+    tip.hidden = false;
+    tip.innerHTML = '<b>'+fd(best.t)+'</b><br>'+esc(best.label)+(best.amt!=null?'<br>'+sg(best.amt):'')+'<br>На счету: <b>'+kc(best.F)+'</b>';
+    var tx = bb.left + px * (bb.width / W) + 12, tw = tip.offsetWidth;
+    if(tx + tw > window.innerWidth - 8) tx = bb.left + px * (bb.width / W) - tw - 12;
+    tip.style.left = (tx + window.scrollX) + 'px'; tip.style.top = (bb.top + window.scrollY + py * (bb.height / H) - 20) + 'px';
+  }
+  function out(){ tip.hidden = true; xh.setAttribute('visibility','hidden'); dot.setAttribute('visibility','hidden'); }
+  hit.addEventListener('mousemove', move); hit.addEventListener('mouseleave', out);
+  hit.addEventListener('touchstart', function(e){ if(e.touches[0]) move(e.touches[0]); }, {passive:true});
+  hit.addEventListener('touchmove', function(e){ if(e.touches[0]) move(e.touches[0]); }, {passive:true});
+  hit.addEventListener('touchend', out);
+}
+
+/* ---------- cost chart (diverging: difference vs route 2) ---------- */
+function renderCost(){
+  var el = $('costchart'), W = Math.max(300, Math.floor(el.clientWidth || 600));
+  var lw = W < 560 ? 40 : 250, rh = 26, gp = 8, top = 20, H = top + R.length*(rh+gp) + 4;
+  var base = R[2].cost, md = Math.max(1000, Math.max.apply(null, R.map(function(r){ return Math.abs(r.cost-base); })));
+  var pad = W < 560 ? 64 : 92, xc = lw + (W - lw) / 2, half = (W - lw) / 2 - pad;
+  function L(dv){ return half * dv / md; }
+  var g = '<defs><pattern id="ph2" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="6" class="hl2"/></pattern></defs>';
+  g += '<text x="'+(xc-6)+'" y="12" text-anchor="end" class="ax">← дешевле маршрута 2</text><text x="'+(xc+6)+'" y="12" class="ax">дороже →</text>';
+  g += '<line x1="'+xc+'" x2="'+xc+'" y1="'+(top-4)+'" y2="'+(H-2)+'" class="base"/>';
+  R.forEach(function(r, i){
+    var y = top + i*(rh+gp), dv = r.cost - base, w = Math.abs(L(dv)), x = dv < 0 ? xc - w : xc;
+    var cls = 'bar ' + (r.st.s==='no' ? 'off' : dv < 0 ? 'neg' : 'pos') + (r.id===st.sel ? ' on' : '');
+    g += '<g class="cbar" data-sel="'+r.id+'" style="cursor:pointer"><title>'+esc('Маршрут '+r.short+': '+r.name+' — '+kc(r.cost)+' за март–июнь'+(r.id==='2'?'':', '+sg(dv)+' к маршруту 2')+(r.st.s==='no'?' (исключён)':''))+'</title>';
+    g += '<rect x="0" y="'+(y-3)+'" width="'+W+'" height="'+(rh+gp)+'" fill="transparent"/>';
+    g += '<text x="'+(lw-8)+'" y="'+(y+rh/2+4)+'" text-anchor="end" class="rl'+(r.id===st.sel?' strong':'')+'">'+esc(W<560?r.short:r.short+'. '+r.name.slice(0,30)+(r.name.length>30?'…':''))+'</text>';
+    if(r.id==='2'){ g += '<rect x="'+(xc-3)+'" y="'+y+'" width="6" height="'+rh+'" rx="2" class="'+cls+'"/><text x="'+(xc+10)+'" y="'+(y+rh/2+4)+'" class="vl">база · '+kt(r.cost)+'</text>'; }
+    else {
+      g += '<rect x="'+x+'" y="'+y+'" width="'+Math.max(3,w)+'" height="'+rh+'" rx="4" class="'+cls+'"/>';
+      if(r.st.s==='no') g += '<rect x="'+x+'" y="'+y+'" width="'+Math.max(3,w)+'" height="'+rh+'" rx="4" fill="url(#ph2)"/>';
+      var lab = sg(dv).replace(' Kč','') + (r.st.s==='no' ? ' ✕' : '');
+      g += dv < 0 ? '<text x="'+(x-6)+'" y="'+(y+rh/2+4)+'" text-anchor="end" class="vl">'+lab+'</text>' : '<text x="'+(x+Math.max(3,w)+6)+'" y="'+(y+rh/2+4)+'" class="vl">'+lab+'</text>';
+    }
+    g += '</g>';
+  });
+  el.innerHTML = svgEl(W, H, g, 'Разница расходов маршрутов с маршрутом 2 за март–июнь');
+  el.querySelectorAll('[data-sel]').forEach(function(n){ n.addEventListener('click', function(){ st.sel = n.getAttribute('data-sel'); saveTool(); renderCards(); renderCost(); renderDetail(); }); });
+}
+
+/* ---------- table + break-even ---------- */
+function renderTable(){
+  var base = R[2].cost;
+  var rows = '<thead><tr><th>Маршрут</th><th>Статус</th><th class="num">Расход мар–июн</th><th class="num">Против маршрута 2</th><th>Подписание</th><th class="num">Минимум фонда</th><th>Хватает при вашем Z?</th><th class="num">Нужно откладывать</th></tr></thead><tbody>';
+  R.forEach(function(r){
+    var s = r.sim;
+    rows += '<tr><td>'+r.short+'. '+esc(r.name)+'</td><td>'+STL[r.st.s][1]+' '+STL[r.st.s][0]+'</td><td class="num">'+kc(r.cost)+'</td><td class="num">'+(r.id==='2'?'—':sg(r.cost-base))+'</td>'+
+      '<td>'+(s.startAt?fd(s.startAt):'прошло')+'</td><td class="num">'+(s.empty?'—':kc(s.minF)+'<br><small>'+(s.minAt?fd(s.minAt):'сегодня')+'</small>')+'</td>'+
+      '<td class="'+(s.ok?'ok':'ko')+'">'+(s.empty?'—':s.ok?'да':'нет')+'</td><td class="num">'+(s.infeasible?'<span class="ko">не хватает F0</span>':s.empty?'—':kc(Math.ceil(s.zreq/100)*100)+'/мес')+'</td></tr>';
+  });
+  $('calc-table').innerHTML = rows + '</tbody>';
+}
+function renderBE(v){
+  var h = v.dU + v.St, m4 = N - v.B - h, X = Math.round(N*v.days/30);
+  var be = [
+    ['Маршрут 2 против 3: экономия <code>G − (ΔU + St + Mx)</code> = '+sg(v.G - h - v.Mx), v.G - h - v.Mx > 0 ? 'маршрут 2 дешевле' : 'дешевле продлить договор Насти (маршрут 3)'],
+    ['Маршрут 2 против 1: экономия <code>N − (ΔU + St + Mx + X)</code> = '+sg(N - h - v.Mx - X), N - h - v.Mx - X > 0 ? 'маршрут 2 дешевле' : 'маршрут 1 не дороже'],
+    ['Досрочный выход Бориса (1а) выгоднее маршрута 1, если <code>E &lt; B</code>: предел '+kc(v.B), v.E1a < v.B ? 'сейчас E = '+kc(v.E1a)+' — выгодно' : 'сейчас E слишком велика'],
+    ['Маршрут 1а выгоднее маршрута 2, если <code>E &lt; B + ΔU + St + Mx − N</code>: предел '+kc(Math.max(0, v.B + h + v.Mx - N)), (v.E1a < v.B + h + v.Mx - N) ? 'выгоднее' : 'не выгоднее'],
+    ['Каждый месяц отсрочки (маршрут 4 против 2) экономит <code>N − B − ΔU − St</code> = '+sg(m4), m4 > 0 ? 'плата за продление съест экономию от '+kc(m4)+' за месяц' : 'отсрочка денег не экономит, даёт только лишний месяц накоплений']
+  ];
+  $('calc-be').innerHTML = be.map(function(x){ return '<li>'+x[0]+' — <b>'+esc(x[1])+'</b></li>'; }).join('');
+}
+
+renderCond();
+calc();
+var rt; window.addEventListener('resize', function(){ clearTimeout(rt); rt = setTimeout(function(){ renderCost(); renderDetail(); }, 150); });
+})();
+
+</script>
+</body>
+</html>
